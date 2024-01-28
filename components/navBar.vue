@@ -1,33 +1,33 @@
 <template>
-  <v-container class="bg-red-300 flex justify-between w-full items-center sticky z-10 mx-auto top-0"
+  <v-container class="bg-red-300 text-gray-700 flex justify-between w-full items-center sticky z-10 mx-auto top-0"
     ><img
       src="/assets/imgs/Momento-logo.png"
       class="h-16 w-40 cursor-pointer"
       alt=""
     />
-    <div class="links flex gap-10 font-bold">
+    <div class="links flex gap-10 font-bold text-xl">
       <NuxtLink
-        class="cursor-pointer hover:text-red-500 hover:text-sm"
+        class="cursor-pointer hover:text-white hover:text-lg"
         style="transition: 0.5s"
         to="/"
         >Home</NuxtLink
       ><NuxtLink
-        class="cursor-pointer hover:text-red-500 hover:text-sm"
+        class="cursor-pointer hover:text-white hover:text-lg"
         style="transition: 0.5s"
         to="/shop"
         >Shop</NuxtLink
       ><NuxtLink
-        class="cursor-pointer hover:text-red-500 hover:text-sm"
+        class="cursor-pointer hover:text-white hover:text-lg"
         style="transition: 0.5s"
         to="/blog"
         >Blog</NuxtLink
       ><NuxtLink
-        class="cursor-pointer hover:text-red-500 hover:text-sm"
+        class="cursor-pointer hover:text-white hover:text-lg"
         style="transition: 0.5s"
         to="/pages"
         >Pages</NuxtLink
       ><NuxtLink
-        class="cursor-pointer hover:text-red-500 hover:text-sm"
+        class="cursor-pointer hover:text-white hover:text-lg"
         style="transition: 0.5s"
         to="/content"
         >Contact</NuxtLink
