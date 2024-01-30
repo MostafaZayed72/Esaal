@@ -1,5 +1,5 @@
 <template>
-  <div style="height: 1000px">
+  <div>
     <v-container class="mt-5 mx-auto flex justify-between bg-white w-full h-screen">
       <v-row>
         <v-col class="lg:ml-16 mt-10">
@@ -94,7 +94,7 @@
             <v-pagination
               v-model="currentPage"
               :length="totalPages"
-              color="primary"
+              color="red-lighten-1"
               hide-delimiters
               rounded="circle"
               prev-icon="mdi-menu-left"

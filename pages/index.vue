@@ -1,1 +1,1 @@
-<template><homeMade/></template>
+<template><homeMade /> <sectionsArea /></template>

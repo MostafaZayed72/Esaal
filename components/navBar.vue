@@ -1,36 +1,38 @@
 <template>
-  <v-container class="bg-red-300 text-gray-700 flex justify-between w-full items-center sticky z-10 mx-auto top-0"
+  <v-container
+    :class="{ scrolled: isScrolled }"
+    class="nav bg-red-200 text-gray-700 flex justify-between w-full items-center sticky z-10 mx-auto top-0"
     ><img
       src="/assets/imgs/Momento-logo.png"
       class="h-16 w-40 cursor-pointer"
       alt=""
     />
-    <div class="links flex gap-10 font-bold text-xl">
+    <div class="links flex flex-row-reverse gap-10 font-bold text-xl">
       <NuxtLink
         class="cursor-pointer hover:text-white hover:text-lg"
         style="transition: 0.5s"
         to="/"
-        >Home</NuxtLink
+        >الرئيسية</NuxtLink
       ><NuxtLink
         class="cursor-pointer hover:text-white hover:text-lg"
         style="transition: 0.5s"
         to="/shop"
-        >Shop</NuxtLink
+        >تسوق</NuxtLink
       ><NuxtLink
         class="cursor-pointer hover:text-white hover:text-lg"
         style="transition: 0.5s"
         to="/blog"
-        >Blog</NuxtLink
+        >العروض</NuxtLink
       ><NuxtLink
         class="cursor-pointer hover:text-white hover:text-lg"
         style="transition: 0.5s"
         to="/pages"
-        >Pages</NuxtLink
+        >الأقسام</NuxtLink
       ><NuxtLink
         class="cursor-pointer hover:text-white hover:text-lg"
         style="transition: 0.5s"
         to="/content"
-        >Contact</NuxtLink
+        >تواصل معنا</NuxtLink
       >
     </div>
     <div class="icons flex gap-6">
@@ -46,7 +48,32 @@
     </div></v-container
   >
 </template>
+
+<script setup>
+const isScrolled = ref(false);
+
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 0;
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
+</script>
+
 <style>
+.nav {
+  transition: background-color 0.3s, font-size 0.3s;
+}
+.scrolled {
+  background-color: rgb(233, 145, 145); /* Change the background color when scrolled */
+  color: white; /* Change the text color when scrolled */
+  font-size: 16px; /* Change the font size when scrolled */
+}
 .header {
   left: 50%;
   transform: translateX(-50%);
@@ -56,4 +83,4 @@
     display: none;
   }
 }
-</style> 
+</style>
