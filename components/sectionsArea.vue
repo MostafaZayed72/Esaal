@@ -1,8 +1,8 @@
 <template>
   <div>
-    <v-container class="bg-white mt-5 lg:w-50 sm:w-100"
-      ><div class="imgs lg:flex lg:justify-around sm:flex-column">
-        <img class="lg:w-64 lg:h-64 rounded-md"
+    <v-container class="bg-white mt-1 lg:w-50 sm:w-100"
+      ><div class="imgs lg:flex lg:justify-around lg:items-center lg:text-center sm:flex-column">
+        <img class="lg:w-64 lg:h-64 rounded-md mt-10"
           src="https://scontent.faly1-2.fna.fbcdn.net/v/t39.30808-6/423194028_363183756429761_1563540347347666683_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeE_S9Be_dQtxgemOBF0gSduGYZitW-uqh8ZhmK1b66qH_gRXCnnrQSJJkTlpSnWTYtYIM0jDERxcJK86c8SLFyS&_nc_ohc=Za-wVSj0fe8AX-YB1NU&_nc_ht=scontent.faly1-2.fna&oh=00_AfAeMeyDUwd_iUlu3s01oCBLfco9AZv7lqHt1Ds12ien6A&oe=65BD6C64"
           alt=""
         />

@@ -62,7 +62,7 @@ onMounted(() => {
     </div></v-container
   >
   <v-container
-    class="bg-white navBar text-gray-700 flex justify-between w-full items-center sticky z-10 mx-auto top-0 shadow-xl"
+    class="bg-white navBar text-gray-700 flex justify-between w-full items-center sticky z-10 mx-auto top-0 shadow-xl" 
     v-if="showNavbar" 
     ><img
       src="/assets/imgs/Momento-logo.png"

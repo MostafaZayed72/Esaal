@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container class="mt-5 mx-auto flex justify-between bg-white w-full h-screen">
+    <v-container class="mt-5 mx-auto flex justify-between bg-gray-300 w-full">
       <v-row>
         <v-col class="lg:ml-16 mt-10">
           <v-slide :value="currentPage" @input="updateCurrentPage">
