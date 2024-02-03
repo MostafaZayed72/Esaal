@@ -3,6 +3,13 @@
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 export default defineNuxtConfig({
   //...
+  head: {
+    // ...
+    link: [
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Changa&display=swap' },
+    ],
+    // ...
+  },
   css: [
     '@fortawesome/fontawesome-free/css/all.css',
   ],

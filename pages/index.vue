@@ -1,1 +1,1 @@
-<template><homeMade /> <sectionsArea /> <trendingProducts /></template>
+<template><MainNav /></template>
