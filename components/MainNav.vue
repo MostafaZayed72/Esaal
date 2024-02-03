@@ -6,28 +6,28 @@
         ><div
           class="languages lg:ml-20 mt-2 flex items-center lg:justify-start sm:justify-center gap-2 md:gap-5"
         >
-          <nuxt-link
+          <NuxtLink
             class="text-white font-bold text-xl"
             style="text-decoration: underline; letter-spacing: 1px"
-            >AR-اللغة العربية</nuxt-link
-          ><nuxt-link
+            >AR-اللغة العربية</NuxtLink
+          ><NuxtLink
             class="text-white font-bold text-xl"
             style="letter-spacing: 1px"
-            >EN-English</nuxt-link
+            >EN-English</NuxtLink
           >
         </div></v-col
       ></v-row
     >
     <!-- START WELCOME NAV -->
-    <v-row style="background-color: rgb(63, 188, 161)" class="relative"
+    <v-row style="background-color: rgb(63, 188, 161)" 
       ><v-col cols="6"
         ><div
           class="mt-7 lg:ml-20 ml-10 flex items-center md:gap-10 font-bold text-xl"
         >
           <v-icon size="50px" class="ml-10">mdi-menu</v-icon>
           <div class="links sign-in">
-            <nuxt-link to="">تسجيل الدخول</nuxt-link> /
-            <nuxt-link to="">انشاء حساب</nuxt-link>
+            <NuxtLink to="">تسجيل الدخول</NuxtLink> /
+            <NuxtLink to="">انشاء حساب</NuxtLink>
           </div>
         </div> </v-col
       ><v-col cols="6"
@@ -47,7 +47,7 @@
         >
           <h1
             class="h-16 text-white text-md md:text-2xl flex items-center justify-center mb-10"
-            style="background-color: rgb(0, 51, 51;direction: rtl"
+            style="background-color: rgb(0, 51, 51); direction: rtl"
           >
             اختر المجال ثم وسيلة التواصل
           </h1>
@@ -83,14 +83,7 @@
     <v-row
       style="background-color: rgb(63, 188, 161); direction: rtl"
       class="no-wrap"
-      ><v-col cols="12" class="mt-8 flex justify-around items-center"
-        ><div class="doctor-img">
-          <img
-            class="rounded-xl"
-            src="https://altibbi.com/theme/altibbi/images/question/promote-for-call-doctor-service-mobile.png"
-            alt=""
-          />
-        </div>
+      ><v-col cols="12" class="mt-8 flex justify-around items-center">
         <div class="contact">
           <div class="text mb-10">
             <h1 class="font-bold text-xl">
@@ -103,6 +96,13 @@
               <span style="text-decoration: underline"> 4578</span>
             </h1>
           </div>
+        </div>
+        <div class="doctor-img">
+          <img
+            class="rounded-xl"
+            src="https://altibbi.com/theme/altibbi/images/question/promote-for-call-doctor-service-mobile.png"
+            alt=""
+          />
         </div>
       </v-col></v-row
     >
