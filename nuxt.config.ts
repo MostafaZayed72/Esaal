@@ -3,7 +3,15 @@
 import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 export default defineNuxtConfig({
   //...
-  css: ["@fortawesome/fontawesome-free/css/all.css"],
+  head: {
+    link: [
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com",
+      },
+    ],
+  },
+  css: ["@fortawesome/fontawesome-free/css/all.css", "/assets/styles.css"],
   build: {
     transpile: ["vuetify"],
   },
@@ -14,8 +22,19 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify({ autoImport: true }));
       });
     },
+    [
+      "@nuxtjs/google-fonts",
+      {
+        families: {
+          Marhey: true,
+          download: true,
+          inject: true,
+        },
+      },
+    ],
     //...
   ],
+
   vite: {
     vue: {
       template: {

@@ -1,7 +1,7 @@
 <template>
   <div
     style="background-color: rgb(173, 177, 176)"
-    class="w-100 h-20 md:h-32 sticky top-0 flex items-center justify-between font-bold text-xl"
+    class="w-100 z-10 h-20 md:h-32 sticky top-0 flex items-center justify-between font-bold text-xl"
   >
     <v-icon size="50px" class="ml-10">mdi-menu</v-icon>
     <div class="links ml-10 flex items-center gap-4">
@@ -30,7 +30,7 @@
   </div>
 
   <div
-    class="bottom-links w-4/5 md:w-3/5 mx-auto flex items-center justify-center gap-4 h-10 rounded-sm sticky top-20 md:top-32"
+    class="bottom-links z-10 w-4/5 md:w-3/5 mx-auto flex items-center justify-center gap-4 h-10 rounded-sm sticky top-20 md:top-32"
     style="background-color: rgb(173, 177, 176)"
   >
     <div

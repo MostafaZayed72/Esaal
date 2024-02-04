@@ -5,6 +5,6 @@
       <homeTable />
       <contactUs />
     </div>
-    <div><SecondaryNav /> <numbers /> <WhyEsaal /></div>
+    <div><SecondaryNav /> <numbers /> <WhyEsaal /> <usingSteps /></div>
   </div>
 </template>
