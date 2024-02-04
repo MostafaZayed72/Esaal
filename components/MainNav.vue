@@ -19,7 +19,7 @@
       ></v-row
     >
     <!-- START WELCOME NAV -->
-    <v-row style="background-color: rgb(63, 188, 161)" 
+    <v-row style="background-color: rgb(63, 188, 161)"
       ><v-col cols="6"
         ><div
           class="mt-7 lg:ml-20 ml-10 flex items-center md:gap-10 font-bold text-xl"
@@ -43,7 +43,7 @@
     <v-row style="background-color: rgb(63, 188, 161)"
       ><v-col cols="12"
         ><div
-          class="table w-2/5 bg-slate-300 mx-auto shadow-xl pb-10 rounded-md"
+          class="table w-3/5 bg-slate-300 mx-auto shadow-xl pb-10 rounded-md"
         >
           <h1
             class="h-16 text-white text-md md:text-2xl flex items-center justify-center mb-10"
@@ -80,12 +80,10 @@
       </v-col></v-row
     >
     <!-- START CONTACT -->
-    <v-row
-      style="background-color: rgb(63, 188, 161); direction: rtl"
-      class="no-wrap"
+    <v-row style="background-color: rgb(63, 188, 161)" class="no-wrap"
       ><v-col cols="12" class="mt-8 flex justify-around items-center">
         <div class="contact">
-          <div class="text mb-10">
+          <div class="text mb-10" style="direction: rtl">
             <h1 class="font-bold text-xl">
               تواصل مع أكثر من <span class="text-white">٧٣٩</span> خبير في موقع
               واحد
@@ -103,9 +101,8 @@
             src="https://altibbi.com/theme/altibbi/images/question/promote-for-call-doctor-service-mobile.png"
             alt=""
           />
-        </div>
-      </v-col></v-row
-    >
+        </div> </v-col
+    ></v-row>
   </nav>
 </template>
 
