@@ -20,3 +20,10 @@
   </nav>
 </template>
 
+<style>
+@media (max-width: 767px) {
+  .languages {
+    justify-content: center;
+  }
+}
+</style>

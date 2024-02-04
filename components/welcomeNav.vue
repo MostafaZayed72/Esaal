@@ -16,3 +16,11 @@
     />
   </div>
 </template>
+
+<style>
+@media (max-width: 767px) {
+  .sign-in {
+    display: none;
+  }
+}
+</style>
