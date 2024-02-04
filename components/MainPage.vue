@@ -8,6 +8,7 @@ import OurFields from './ourFields.vue';
     </div>
     <div>
       <SecondaryNav /> <numbers /> <WhyEsaal /> <usingSteps /> <OurFields />
+      <rates />
     </div>
   </div>
 </template>
