@@ -33,8 +33,8 @@
       />
     </div>
     <div
-      class="icon rounded-md flex flex-col items-center justify-center bg-white shadow-md"
-      style="transform: translateY(-100px)"
+      class="icon-different rounded-md flex flex-col items-center justify-center bg-white shadow-md"
+      style="transform: translateY(-40px)"
     >
       <h1 class="font-bold text-5xl mt-10">03</h1>
 
@@ -47,8 +47,8 @@
       />
     </div>
     <div
-      class="icon rounded-md flex flex-col items-center justify-center bg-white"
-      style="border: 1px solid gray; transform: translateY(-40px)"
+      class="icon rounded-md flex flex-col items-center justify-center bg-white shadow-md"
+      style="transform: translateY(-40px)"
     >
       <h1 class="font-bold text-5xl mt-10">02</h1>
       <h1 class="font-bold text-lg">اختر الخبير</h1>
@@ -59,8 +59,8 @@
       />
     </div>
     <div
-      class="icon rounded-md flex flex-col items-center justify-center bg-white"
-      style="border: 1px solid gray; transform: translateY(-40px)"
+      class="icon rounded-md flex flex-col items-center justify-center bg-white shadow-md"
+      style="transform: translateY(-40px)"
     >
       <h1 class="font-bold text-5xl mt-10">01</h1>
       <h1 class="font-bold text-lg">اختر المجال</h1>
@@ -71,4 +71,22 @@
       />
     </div>
   </div>
+  <div
+    class="bottom mt-32 flex flex-col-reverse md:flex-row gap-10 justify-center items-center"
+  >
+    <img
+      style="width: 500px"
+      src="https://static.vecteezy.com/system/resources/previews/020/962/941/original/family-graphic-clipart-design-free-png.png"
+      alt=""
+    />
+    <h1 class="text-3xl font-bold">اسأل.. رحلتك لحياة صحية تبدأ هنا</h1>
+  </div>
 </template>
+
+<style>
+@media (min-width: 767px) {
+  .icon-different {
+    transform: translateY(-100px);
+  }
+}
+</style>
