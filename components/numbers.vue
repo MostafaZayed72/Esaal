@@ -1,6 +1,5 @@
 <template>
-  <div class="numbers">
-    <secondaryNav />
+  <div class="numbers mb-24">
     <h1 class="text-center mt-20 text-7xl font-bold">الأرقام</h1>
     <div class="icons mt-36 flex gap-64 md:gap-0 justify-around mx-auto">
       <div

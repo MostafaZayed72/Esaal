@@ -4,7 +4,7 @@
     class="w-100 h-20 md:h-32 sticky top-0 flex items-center justify-between font-bold text-xl"
   >
     <v-icon size="50px" class="ml-10">mdi-menu</v-icon>
-    <div class="links flex items-center gap-4">
+    <div class="links ml-10 flex items-center gap-4">
       <div
         class="ask cursor-pointer py-1 flex justify-center items-center gap-2"
         style="width: 200px; background-color: rgb(0, 51, 51)"
