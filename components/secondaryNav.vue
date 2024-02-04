@@ -23,7 +23,7 @@
     </div>
     <img
       class="mr-10"
-      src="https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/logo_pal.svg"
+      src="/assets/imgs/logo_pal.svg"
       style="max-width: 150px"
       alt=""
     />
