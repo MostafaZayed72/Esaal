@@ -1,44 +1,9 @@
 <template>
-  <nav class="w-100" style="background-color: rgb(0, 51, 51)">
+  <div class="container" style="background-color: rgb(0, 51, 51)">
     <!-- START MAIN NAV -->
-    <v-row class="main-row" style="height: 55px"
-      ><v-col cols="12"
-        ><div
-          class="languages lg:ml-20 mt-2 flex items-center lg:justify-start sm:justify-center gap-2 md:gap-5"
-        >
-          <NuxtLink
-            class="text-white font-bold text-xl"
-            style="text-decoration: underline; letter-spacing: 1px"
-            >AR-اللغة العربية</NuxtLink
-          ><NuxtLink
-            class="text-white font-bold text-xl"
-            style="letter-spacing: 1px"
-            >EN-English</NuxtLink
-          >
-        </div></v-col
-      ></v-row
-    >
+    <navBar />
     <!-- START WELCOME NAV -->
-    <v-row style="background-color: rgb(63, 188, 161)"
-      ><v-col cols="6"
-        ><div
-          class="mt-7 lg:ml-20 ml-10 flex items-center md:gap-10 font-bold text-xl"
-        >
-          <v-icon size="50px" class="ml-10">mdi-menu</v-icon>
-          <div class="links sign-in">
-            <NuxtLink to="">تسجيل الدخول</NuxtLink> /
-            <NuxtLink to="">انشاء حساب</NuxtLink>
-          </div>
-        </div> </v-col
-      ><v-col cols="6"
-        ><div class="img mt-5 items-center">
-          <img
-            class="absolute right-16"
-            src="https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/logo_pal.svg"
-            style="max-width: 183px"
-            alt=""
-          /></div></v-col
-    ></v-row>
+    <welcomeNav />
     <!-- START TABLE -->
     <v-row style="background-color: rgb(63, 188, 161)"
       ><v-col cols="12"
@@ -103,9 +68,8 @@
           />
         </div> </v-col
     ></v-row>
-  </nav>
+  </div>
 </template>
-
 <style>
 @media (max-width: 1330px) {
   .doctor-img {
