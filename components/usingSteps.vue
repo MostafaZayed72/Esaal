@@ -79,7 +79,7 @@
       src="https://static.vecteezy.com/system/resources/previews/020/962/941/original/family-graphic-clipart-design-free-png.png"
       alt=""
     />
-    <h1 class="text-3xl font-bold">اسأل.. رحلتك لحياة صحية تبدأ هنا</h1>
+    <h1 class="text-3xl font-bold text-center">اسأل.. رحلتك لحياة صحية تبدأ هنا</h1>
   </div>
 </template>
 
