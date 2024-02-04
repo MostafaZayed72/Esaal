@@ -1,5 +1,3 @@
-import SecondaryNav from './secondaryNav.vue'; import WhyEsaal from
-'./whyEsaal.vue';
 <template>
   <div class="main-page">
     <div class="top" style="background-color: rgb(63, 188, 161)">
