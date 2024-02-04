@@ -1,10 +1,11 @@
 <template>
+  <nuxt-layout></nuxt-layout>
   <NuxtPage />
 </template>
 
 <style>
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-track {
