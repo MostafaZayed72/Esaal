@@ -7,7 +7,7 @@
     </div>
     <div>
       <SecondaryNav /> <numbers /> <WhyEsaal /> <usingSteps /> <OurFields />
-      <rates /> <scrollTop />
+      <rates /> <scrollTop /> 
     </div>
   </div>
 </template>
