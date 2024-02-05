@@ -445,7 +445,7 @@
     </div>
 
 
-    <div class="button text-center">
+    <div class="button text-center mt-10 md:mt-0">
       <button
         class="bg-gray-300 w-32 h-12 shadow-xl font-bold"
         @click="toggleShowMore"
