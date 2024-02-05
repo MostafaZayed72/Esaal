@@ -136,7 +136,7 @@
       </div>
     </div>
 
-    <div
+    <div v-show="showMore"
       class="row-4 flex flex-col md:flex-row gap-10 md:gap-0 justify-around items-center md:mb-20"
     >
       <div
@@ -181,7 +181,7 @@
       </div>
     </div>
 
-    <div
+    <div v-show="showMore"
       class="row-5 flex flex-col md:flex-row gap-10 md:gap-0 justify-around items-center md:mb-20"
     >
       <div
@@ -226,7 +226,7 @@
       </div>
     </div>
 
-    <div
+    <div v-show="showMore"
       class="row-6 flex flex-col md:flex-row gap-10 md:gap-0 justify-around items-center md:mb-20"
     >
       <div
@@ -271,7 +271,7 @@
       </div>
     </div>
 
-    <div
+    <div v-show="showMore"
       class="row-7 flex flex-col md:flex-row gap-10 md:gap-0 justify-around items-center md:mb-20"
     >
       <div
@@ -316,7 +316,7 @@
       </div>
     </div>
 
-    <div
+    <div v-show="showMore"
       class="row-8 flex flex-col md:flex-row gap-10 md:gap-0 justify-around items-center md:mb-20"
     >
       <div
@@ -361,7 +361,7 @@
       </div>
     </div>
 
-    <div
+    <div v-show="showMore"
       class="row-9 flex flex-col md:flex-row gap-10 md:gap-0 justify-around items-center md:mb-20"
     >
       <div
@@ -406,7 +406,7 @@
       </div>
     </div>
 
-    <div
+    <div v-show="showMore"
       class="row-10 flex flex-col md:flex-row gap-10 md:gap-0 justify-around items-center md:mb-20"
     >
       <div
@@ -444,6 +444,18 @@
       </div>
     </div>
 
+
+    <div class="button text-center">
+      <button
+        class="bg-gray-300 w-32 h-12 shadow-xl font-bold"
+        @click="toggleShowMore"
+      >
+        {{ showMore ? "إظهار أقل" : "إظهار المزيد" }}
+      </button>
+    </div>
+
+
+
     <div
       class="bottom mt-64 flex flex-col md:flex-row justify-center items-center gap-10"
     >
@@ -457,3 +469,13 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { ref } from "vue";
+
+const showMore = ref(false);
+
+const toggleShowMore = () => {
+  showMore.value = !showMore.value;
+};
+</script>
