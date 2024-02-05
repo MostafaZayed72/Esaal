@@ -471,8 +471,6 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-
 const showMore = ref(false);
 
 const toggleShowMore = () => {
