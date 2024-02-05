@@ -13,7 +13,7 @@
     }"
     :pagination="true"
     :modules="modules"
-    class="mySwiper text-center h-24"
+    class="mySwiper text-center h-36 md:h-24"
   >
     <swiper-slide
       ><h1>
