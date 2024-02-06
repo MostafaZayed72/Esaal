@@ -25,6 +25,7 @@
           <h1 class="font-bold text-lg mt-2">استشارات نفسية</h1>
         </div>
         <div
+          @click="show_medical"
           class="bg-gray-400 icon-table text-center rounded-md cursor-pointer hover:bg-emerald-900 hover:text-white"
           style="width: 150px; height: 150px; transform: translateY(-25px)"
         >
@@ -32,6 +33,31 @@
           <h1 class="font-bold text-lg mt-2">استشارات طبية</h1>
         </div>
       </div>
+
+      <div
+        class="medical_menu bg-slate-300 mx-auto mt-4 shadow-xl rounded-md"
+        v-show="medical_menu"
+      >
+        <div
+          class="line text-center mx-auto"
+          style="border-bottom: 1px solid rgb(177, 170, 170); width: 80%"
+        ></div>
+        <div class="select flex flex-col items-end justify-center gap-2">
+          <h1 class="text-end mr-20 mt-2">اختر التخصص و وسيلة التواصل</h1>
+<v-select class="w-80 mr-20" v-model="selectedItem"
+          :items="items"
+          ></v-select>
+        </div>
+      </div>
     </div>
   </div>
 </template>
+
+<script setup>
+const medical_menu = ref(false);
+const show_medical = () => {
+  medical_menu.value = !medical_menu.value;
+};
+const selectedItem = ref("جراحة");
+const items = ["Arabic / اللغة العربية" , "English / اللغة الإنجليزية"];
+</script>
