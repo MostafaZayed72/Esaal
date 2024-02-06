@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div class="table w-3/5 bg-slate-300 mx-auto mt-4 shadow-xl rounded-md">
+    <div
+      class="table sm:w-100 md:w-2/5 bg-slate-300 mx-auto mt-4 shadow-xl sm:rounded-md md:rounded-xl"
+    >
       <h1
         class="h-10 text-white text-md md:text-2xl flex items-center justify-center mb-10"
         style="background-color: rgb(0, 51, 51); direction: rtl"
@@ -8,30 +10,28 @@
         اختر المجال ثم وسيلة التواصل
       </h1>
       <div
-        class="icons flex flex-col gap-10 items-center justify-around lg:flex-row"
+        class="icons flex gap-1 md:gap-10 items-center justify-center md:justify-around"
       >
         <div
-          class="bg-gray-400 icon-table text-center rounded-md cursor-pointer transition duration-300 hover:bg-emerald-900 hover:text-white"
-          style="width: 150px; height: 150px; transform: translateY(-25px)"
+          @click="show_nutrition"
+          class="bg-gray-400 icon-table text-center rounded-md py-6 md:px-2 mb-10  cursor-pointer transition duration-300 hover:bg-emerald-900 hover:text-white"
         >
-          <i class="fa-solid fa-apple-whole text-5xl mt-12"></i>
-          <h1 class="font-bold text-lg mt-2">استشارات تغذية</h1>
+          <i class="fa-solid fa-apple-whole text-5xl"></i>
+          <h1 class="font-bold text-lg">استشارات تغذية</h1>
         </div>
         <div
           @click="show_psych"
-          class="bg-gray-400 icon-table text-center rounded-md cursor-pointer hover:bg-emerald-900 hover:text-white"
-          style="width: 150px; height: 150px; transform: translateY(-25px)"
+          class="bg-gray-400 icon-table text-center rounded-md py-6 md:px-2 mb-10 cursor-pointer hover:bg-emerald-900 hover:text-white"
         >
-          <i class="fa-solid fa-user-doctor text-5xl mt-12"></i>
-          <h1 class="font-bold text-lg mt-2">استشارات نفسية</h1>
+          <i class="fa-solid fa-user-doctor text-5xl "></i>
+          <h1 class="font-bold text-lg ">استشارات نفسية</h1>
         </div>
         <div
           @click="show_medical"
-          class="bg-gray-400 icon-table text-center rounded-md cursor-pointer hover:bg-emerald-900 hover:text-white"
-          style="width: 150px; height: 150px; transform: translateY(-25px)"
+          class="bg-gray-400 icon-table text-center rounded-md py-6 md:px-2 mb-10 cursor-pointer hover:bg-emerald-900 hover:text-white"
         >
-          <i class="fa-solid fa-stethoscope text-5xl mt-12"></i>
-          <h1 class="font-bold text-lg mt-2">استشارات طبية</h1>
+          <i class="fa-solid fa-stethoscope text-5xl "></i>
+          <h1 class="font-bold text-lg ">استشارات طبية</h1>
         </div>
       </div>
 
@@ -46,7 +46,7 @@
         <div class="select flex flex-col items-end justify-center gap-2">
           <h1 class="text-end mr-20 mt-2">اختر التخصص و وسيلة التواصل</h1>
           <v-select
-            class="w-80 mr-20 flex"
+            class="w-80 mx-auto flex"
             :items="medical_list"
             item-title="name"
             item-value="id"
@@ -64,6 +64,31 @@
             </template>
           </v-select>
         </div>
+        <div
+          class="icons mt-10 flex flex-col gap-10 items-center justify-around lg:flex-row"
+        >
+          <div
+            class="icon-table text-center rounded-md cursor-pointer transition duration-300 hover:bg-green-300 hover:text-white"
+            style="width: 150px; height: 150px; transform: translateY(-25px)"
+          >
+            <i class="fa-solid fa-message text-5xl mt-12 text-green-700"></i>
+            <h1 class="font-bold text-lg mt-2">استشارة نصية</h1>
+          </div>
+          <div
+            class="icon-table text-center rounded-md cursor-pointer transition duration-300 hover:bg-green-300 hover:text-white"
+            style="width: 150px; height: 150px; transform: translateY(-25px)"
+          >
+            <i class="fa-solid fa-phone text-5xl mt-12 text-green-700"></i>
+            <h1 class="font-bold text-lg mt-2">استشارة صوتية</h1>
+          </div>
+          <div
+            class="icon-table text-center rounded-md cursor-pointer transition duration-300 hover:bg-green-300 hover:text-white"
+            style="width: 150px; height: 150px; transform: translateY(-25px)"
+          >
+            <i class="fa-solid fa-video text-5xl mt-12 text-green-700"></i>
+            <h1 class="font-bold text-lg mt-2">استشارة فيديو</h1>
+          </div>
+        </div>
       </div>
       <div
         class="psych_menu bg-slate-300 mx-auto mt-4 shadow-xl rounded-md"
@@ -76,7 +101,7 @@
         <div class="select flex flex-col items-end justify-center gap-2">
           <h1 class="text-end mr-20 mt-2">اختر التخصص و وسيلة التواصل</h1>
           <v-select
-            class="w-80 mr-20 flex"
+            class="w-80 mx-auto flex"
             :items="psych_list"
             item-title="name"
             item-value="id"
@@ -94,6 +119,69 @@
             </template>
           </v-select>
         </div>
+        <div
+          class="icons mt-10 flex flex-col gap-10 items-center justify-around lg:flex-row"
+        >
+          <div
+            class="icon-table text-center rounded-md cursor-pointer transition duration-300 hover:bg-green-300 hover:text-white"
+            style="width: 150px; height: 150px; transform: translateY(-25px)"
+          >
+            <i class="fa-solid fa-message text-5xl mt-12 text-green-700"></i>
+            <h1 class="font-bold text-lg mt-2">استشارة نصية</h1>
+          </div>
+          <div
+            class="icon-table text-center rounded-md cursor-pointer transition duration-300 hover:bg-green-300 hover:text-white"
+            style="width: 150px; height: 150px; transform: translateY(-25px)"
+          >
+            <i class="fa-solid fa-phone text-5xl mt-12 text-green-700"></i>
+            <h1 class="font-bold text-lg mt-2">استشارة صوتية</h1>
+          </div>
+          <div
+            class="icon-table text-center rounded-md cursor-pointer transition duration-300 hover:bg-green-300 hover:text-white"
+            style="width: 150px; height: 150px; transform: translateY(-25px)"
+          >
+            <i class="fa-solid fa-video text-5xl mt-12 text-green-700"></i>
+            <h1 class="font-bold text-lg mt-2">استشارة فيديو</h1>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="nutrition bg-slate-300 mx-auto mt-4 shadow-xl rounded-md"
+        v-show="nutrition"
+      >
+        <div
+          class="line text-center mx-auto"
+          style="border-bottom: 1px solid rgb(177, 170, 170); width: 80%"
+        ></div>
+        <div class="select flex flex-col items-end justify-center gap-2">
+          <h1 class="text-end mr-20 mt-2">اختر التخصص و وسيلة التواصل</h1>
+        </div>
+        <div
+          class="icons mt-10 flex flex-col gap-10 items-center justify-around lg:flex-row"
+        >
+          <div
+            class="icon-table text-center rounded-md cursor-pointer transition duration-300 hover:bg-green-300 hover:text-white"
+            style="width: 150px; height: 150px; transform: translateY(-25px)"
+          >
+            <i class="fa-solid fa-message text-5xl mt-12 text-green-700"></i>
+            <h1 class="font-bold text-lg mt-2">استشارة نصية</h1>
+          </div>
+          <div
+            class="icon-table text-center rounded-md cursor-pointer transition duration-300 hover:bg-green-300 hover:text-white"
+            style="width: 150px; height: 150px; transform: translateY(-25px)"
+          >
+            <i class="fa-solid fa-phone text-5xl mt-12 text-green-700"></i>
+            <h1 class="font-bold text-lg mt-2">استشارة صوتية</h1>
+          </div>
+          <div
+            class="icon-table text-center rounded-md cursor-pointer transition duration-300 hover:bg-green-300 hover:text-white"
+            style="width: 150px; height: 150px; transform: translateY(-25px)"
+          >
+            <i class="fa-solid fa-video text-5xl mt-12 text-green-700"></i>
+            <h1 class="font-bold text-lg mt-2">استشارة فيديو</h1>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -102,14 +190,22 @@
 <script setup>
 const medical_menu = ref(false);
 const psych_menu = ref(false);
+const nutrition = ref(false);
 
 const show_medical = () => {
   medical_menu.value = !medical_menu.value;
   psych_menu.value = false;
+  nutrition.value = false;
 };
 const show_psych = () => {
   psych_menu.value = !psych_menu.value;
   medical_menu.value = false;
+  nutrition.value = false;
+};
+const show_nutrition = () => {
+  nutrition.value = !nutrition.value;
+  medical_menu.value = false;
+  psych_menu.value = false;
 };
 const selectedMedicalItem = ref("التخصصات الطبية");
 const selectedPsychItem = ref("التخصصات النفسية");
