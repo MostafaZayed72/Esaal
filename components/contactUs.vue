@@ -1,8 +1,8 @@
 <template>
-  <div class="contact mt-10 flex items-center justify-around">
+  <div class="contact mt-10 flex flex-col-reverse md:flex-row items-center justify-around">
     <div class="doctor-img">
       <img
-        class="rounded-xl h-80"
+        class="md:rounded-xl h-80"
         src="https://altibbi.com/theme/altibbi/images/question/promote-for-call-doctor-service-mobile.png"
         alt=""
       />
@@ -26,8 +26,5 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .doctor-img {
-    display: none;
   }
-}
 </style>
