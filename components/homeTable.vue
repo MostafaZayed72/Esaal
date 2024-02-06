@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="table sm:w-100 md:w-2/5 bg-slate-300 mx-auto mt-4 shadow-xl sm:rounded-md md:rounded-xl"
+      class="table sm:w-100 md:w-2/5 bg-slate-300 mx-auto mt-4 shadow-xl rounded-md"
     >
       <h1
         class="h-10 text-white text-md md:text-2xl flex items-center justify-center mb-10"
