@@ -36,7 +36,7 @@
   >
   <v-container
     v-if="menu"
-    class="menu bg-gray-300 z-50 drop-menu"
+    class="menu bg-gray-300 z-50 drop-menu mx-auto"
     style="transform: translateY(-10px)"
     ><v-row
       ><v-col cols="12" class="flex justify-between items-center"
@@ -155,17 +155,9 @@ const showMenu = () => {
     display: none;
   }
 }
-/* @media (max-width: 1000px) {
-  .drop-menu {
-    position: fixed;
-  bottom: 17%;
-    right: 0px;
-  }
-} */
 .drop-menu {
   position: fixed;
   bottom: 17%;
-  right: 5%;
   z-index: 11;
 }
 </style>
