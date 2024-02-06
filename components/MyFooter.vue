@@ -51,7 +51,6 @@
             class="hover:text-yellow-500 cursor-pointer"
             >البحث عن خبير</nuxt-link
           ><nuxt-link
-            target="_blank"
             to="/"
             class="hover:text-yellow-500 cursor-pointer"
             >الصفحة الرئيسية</nuxt-link
