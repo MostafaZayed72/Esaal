@@ -1,7 +1,7 @@
 <template>
-  <v-container
+  <v-container class="shadow-md" style="border-bottom: 1px solid rgb(173, 168, 168);"
     ><v-row
-      ><v-col cols="12" class="flex justify-between items-center"
+      ><v-col cols="12" class="flex justify-between items-center "
         ><h1 class="font-bold text-2xl cursor-pointer" @click="show_dialog">
           {{ dialog ? "-" : "+" }}
         </h1>

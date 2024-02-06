@@ -32,7 +32,7 @@
             مشاكل أخرى
           </p>
           <i class="fa-solid fa-arrow-down"></i></nuxt-link></v-col
-      ><QuestionsMainDialog_1 /><QuestionsMainDialog_2 /></v-row
+      ><QuestionsMainDialog_1 /><QuestionsMainDialog_2 /><QuestionsPurchase /><QuestionsCancel /><QuestionsMainDialog_1 /><QuestionsMainDialog_2 /></v-row
   ></v-container>
 </template>
 

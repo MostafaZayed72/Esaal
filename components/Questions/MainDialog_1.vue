@@ -1,11 +1,13 @@
 <template>
   <v-container
+    class="shadow-md"
+    style="border-bottom: 1px solid rgb(173, 168, 168)"
     ><v-row
       ><v-col cols="12" class="mt-6"
         ><h1 class="text-end font-bold text-2xl">عام</h1></v-col
       ><v-col cols="12" class="flex justify-between items-center"
         ><h1 class="font-bold text-2xl cursor-pointer" @click="show_dialog">
-          {{ dialog? "-" : "+" }}
+          {{ dialog ? "-" : "+" }}
         </h1>
         <h1
           class="font-bold cursor-pointer"
@@ -41,26 +43,26 @@
           </h1></v-col
         >
         <v-col cols="12"
-          ><h1 style="direction: rtl" >
+          ><h1 style="direction: rtl">
             رابعا: بعد اختيار وسيلة الدفع سيتم ارسال ايميل ورسالة تأكيدية بنجاح
             عملية الدفع تحتوي على تفاصيل الجلسة ورابط للدخول على الموقع وتسجيل
             الدخول بالايميل او رقم الهاتف وكلمة السر الخاصة بك ثم الدخول على
             "جلساتي" لبدء الجلسة
           </h1></v-col
         ><v-col cols="12"
-          ><h1 style="direction: rtl" >
+          ><h1 style="direction: rtl">
             هناك ثلاث اختيارات في الصفحة الخاصة بجلساتي
           </h1></v-col
         ><v-col cols="12"
-          ><h1 style="direction: rtl" >
+          ><h1 style="direction: rtl">
             انضم للجلسة: يتم فتح رابط الجلسة قبل الميعاد بعشر دقائق
           </h1></v-col
         ><v-col cols="12"
-          ><h1 style="direction: rtl" >
+          ><h1 style="direction: rtl">
             الغاء الجلسة: يرجى الاطلاع على سياسة الغاء الجلسات
           </h1></v-col
         ><v-col cols="12"
-          ><h1 style="direction: rtl" >
+          ><h1 style="direction: rtl">
             ارسال ايميل للخبير: يتم استخدامه في حالة ارسال مستندات للخبير بعد
             الجلسة.
           </h1></v-col
