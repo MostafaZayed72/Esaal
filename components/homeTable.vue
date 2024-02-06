@@ -18,6 +18,7 @@
           <h1 class="font-bold text-lg mt-2">استشارات تغذية</h1>
         </div>
         <div
+          @click="show_psych"
           class="bg-gray-400 icon-table text-center rounded-md cursor-pointer hover:bg-emerald-900 hover:text-white"
           style="width: 150px; height: 150px; transform: translateY(-25px)"
         >
@@ -46,10 +47,40 @@
           <h1 class="text-end mr-20 mt-2">اختر التخصص و وسيلة التواصل</h1>
           <v-select
             class="w-80 mr-20 flex"
-            :items="mylist"
+            :items="medical_list"
             item-title="name"
             item-value="id"
-            v-model="selectedItem"
+            v-model="selectedMedicalItem"
+          >
+            <template #item="{ item, props }">
+              <v-list-item v-bind="props">
+                <template #title>
+                  <div class="flex items-center justify-end gap-2">
+                    <h1>{{ item.raw.name }}</h1>
+                    <img :src="item.raw.image" />
+                  </div>
+                </template>
+              </v-list-item>
+            </template>
+          </v-select>
+        </div>
+      </div>
+      <div
+        class="psych_menu bg-slate-300 mx-auto mt-4 shadow-xl rounded-md"
+        v-show="psych_menu"
+      >
+        <div
+          class="line text-center mx-auto"
+          style="border-bottom: 1px solid rgb(177, 170, 170); width: 80%"
+        ></div>
+        <div class="select flex flex-col items-end justify-center gap-2">
+          <h1 class="text-end mr-20 mt-2">اختر التخصص و وسيلة التواصل</h1>
+          <v-select
+            class="w-80 mr-20 flex"
+            :items="psych_list"
+            item-title="name"
+            item-value="id"
+            v-model="selectedPsychItem"
           >
             <template #item="{ item, props }">
               <v-list-item v-bind="props">
@@ -70,11 +101,19 @@
 
 <script setup>
 const medical_menu = ref(false);
+const psych_menu = ref(false);
+
 const show_medical = () => {
   medical_menu.value = !medical_menu.value;
+  psych_menu.value = false;
 };
-const selectedItem = ref("التخصصات الطبية");
-const mylist = [
+const show_psych = () => {
+  psych_menu.value = !psych_menu.value;
+  medical_menu.value = false;
+};
+const selectedMedicalItem = ref("التخصصات الطبية");
+const selectedPsychItem = ref("التخصصات النفسية");
+const medical_list = [
   {
     id: 0,
     image:
@@ -88,46 +127,48 @@ const mylist = [
     name: "أنف وأذن وحنجرة",
   },
   {
-    id:2 ,
+    id: 2,
     image:
       " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/Interal.svg",
     name: "باطنة",
   },
   {
-    id:3 ,
+    id: 3,
     image:
       "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/Genecology.svg ",
     name: "نساء وتوليد",
   },
   {
-    id:4 ,
+    id: 4,
     image:
       "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/physic.svg ",
     name: "علاج طبيعي",
   },
   {
-    id:5 ,
+    id: 5,
     image:
       " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/Family(1).svg",
     name: "طب الأسرة",
   },
   {
-    id:6 ,
+    id: 6,
     image:
       "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/Orology.svg ",
     name: "مسالك بولية",
-  },{
-    id:7,
+  },
+  {
+    id: 7,
     image:
       "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/Ophtamology.svg ",
     name: "عيون",
   },
   {
-    id:8 ,
+    id: 8,
     image:
       " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/Hepatology.svg",
     name: "الكبد والجهازالهضمي",
-  },{
+  },
+  {
     id: 9,
     image:
       " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/kidney-organ.svg",
@@ -138,18 +179,20 @@ const mylist = [
     image:
       " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/PlasticSurgery.svg",
     name: "جراحة تجميل",
-  },{
+  },
+  {
     id: 11,
     image:
       " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/ObesityandLaparoscopicSurgery.svg",
     name: "جراحة سمنة",
   },
   {
-    id:12 ,
+    id: 12,
     image:
       " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/svgexport-6(90).svg",
     name: "جلدية وتناسلية",
-  },{
+  },
+  {
     id: 13,
     image:
       "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/Surgery.svg ",
@@ -160,7 +203,8 @@ const mylist = [
     image:
       " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/Orthopedics-1.svg",
     name: "عظام",
-  },{
+  },
+  {
     id: 15,
     image:
       " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/General.svg",
@@ -171,51 +215,123 @@ const mylist = [
     image:
       "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/Old.svg ",
     name: "طب الشيخوخة",
-  },{
-    id:17 ,
+  },
+  {
+    id: 17,
     image:
       " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/svgexport-6(89).svg",
     name: "قلب",
   },
   {
-    id:18 ,
+    id: 18,
     image:
       " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/svgexport-6(92).svg",
     name: "أسنان",
-  },{
-    id:19 ,
+  },
+  {
+    id: 19,
     image:
       " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/Neurology-1.svg",
     name: "مخ وأعصاب",
   },
   {
-    id:20 ,
+    id: 20,
     image:
       " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/Oncology(Tumor).svg",
     name: "أورام",
-  },{
-    id:21 ,
+  },
+  {
+    id: 21,
     image:
       "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/lab.svg ",
     name: "تحاليل وأشعة",
   },
   {
-    id:22 ,
+    id: 22,
     image:
       " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/ChestandRespiratory.svg",
     name: "صدر وجهاز تنفسي",
   },
   {
-    id:23 ,
+    id: 23,
     image:
-      " ",
-    name: " ",
+      " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/Hematology1.svg",
+    name: "أمراض الدم",
   },
   {
     id: 24,
     image:
-      " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/Hematology1.svg",
-    name: "أمراض الدم",
+      " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/svgexport-6(91).svg",
+    name: "سكر وغدد صماء",
+  },
+];
+
+const psych_list = [
+  {
+    id: 0,
+    image:
+      "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/home.svg",
+    name: "استشارات زوجية وعلاقات",
+  },
+  {
+    id: 1,
+    image:
+      "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/parenting-counseling.svg",
+    name: "استشارات تربوية",
+  },
+  {
+    id: 2,
+    image:
+      "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/career.svg",
+    name: "استشارات تنمية ذاتية",
+  },
+  {
+    id: 3,
+    image:
+      " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/svgexport-6(96).svg",
+    name: "مشاكل المراهقة",
+  },
+  {
+    id: 4,
+    image:
+      " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/addiction-1.svg",
+    name: "الإدمان",
+  },
+  {
+    id: 5,
+    image:
+      " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/svgexport-6(85).svg",
+    name: "المشاكل الجنسية",
+  },
+  {
+    id: 6,
+    image:
+      "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/wondering.svg ",
+    name: "الإضطرابات( الإكتئاب/ القلق/ الرهاب)",
+  },
+  {
+    id: 7,
+    image:
+      " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/Oldcare.svg",
+    name: "مشاكل الشيخوخة",
+  },
+  {
+    id: 8,
+    image:
+      " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/svgexport-6(97).svg",
+    name: "مشاكل الأطفال",
+  },
+  {
+    id: 9,
+    image:
+      "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/bbd.svg ",
+    name: "اضطرابات الشخصية الحدية",
+  },
+  {
+    id: 10,
+    image:
+      "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/icons/ocd-1.svg ",
+    name: "اضطرابات الوسواس القهري",
   },
 ];
 </script>
