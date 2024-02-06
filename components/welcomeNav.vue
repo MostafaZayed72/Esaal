@@ -53,7 +53,6 @@
       <v-col cols="12" class="flex items-center justify-center gap-28">
         <div class="home flex gap-2">
           <nuxt-link
-            target="_blank"
             class="hover:text-green-700 cursor-pointer"
             to=""
             >حجز استشارة</nuxt-link
@@ -61,7 +60,6 @@
         </div>
         <div class="home flex gap-2">
           <nuxt-link
-            target="_blank"
             class="hover:text-green-700 cursor-pointer"
             to=""
             >الصفحة الرئيسية</nuxt-link
@@ -71,7 +69,6 @@
       <v-col cols="12" class="flex items-center justify-center gap-28">
         <div class="home flex gap-2">
           <nuxt-link
-            target="_blank"
             class="hover:text-green-700 cursor-pointer"
             to=""
             >المدونة</nuxt-link
@@ -79,9 +76,8 @@
         </div>
         <div class="home flex gap-2">
           <nuxt-link
-            target="_blank"
             class="hover:text-green-700 cursor-pointer"
-            to=""
+            to="/questions"
             >الأسئلة المتكررة</nuxt-link
           ><i class="fa-solid fa-comments"></i>
         </div> </v-col
