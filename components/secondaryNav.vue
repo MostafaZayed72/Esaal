@@ -22,10 +22,11 @@
       </div>
     </div>
     <img
-      class="mr-10"
+      class="mr-10 cursor-pointer"
       src="/assets/imgs/logo_pal.svg"
       style="max-width: 150px"
       alt=""
+      @click="redirectToHome"
     />
   </div>
 
@@ -50,6 +51,16 @@
     </div>
   </div>
 </template>
+
+<script setup>
+const router = useRouter();
+const redirectToHome = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+</script>
 
 <style>
 @media (max-width: 992px) {
