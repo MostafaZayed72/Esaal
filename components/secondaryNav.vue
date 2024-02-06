@@ -3,7 +3,9 @@
     style="background-color: rgb(173, 177, 176)"
     class="w-100 z-10 h-20 md:h-20 sticky top-0 flex items-center justify-between font-bold text-xl"
   >
-    <v-icon size="50px" class="ml-10">mdi-menu</v-icon>
+    <v-icon size="50px" class="ml-10 cursor-pointer" @click="showMenu"
+      >mdi-menu</v-icon
+    >
     <div class="links ml-10 flex items-center gap-4">
       <div
         class="ask cursor-pointer py-1 flex justify-center items-center gap-2"
@@ -29,9 +31,84 @@
       @click="redirectToHome"
     />
   </div>
-
+  <v-icon size="50px" class="ml-10 cursor-pointer" @click="showMenu"
+    >mdi-menu</v-icon
+  >
+  <v-container
+    v-if="menu"
+    class="menu bg-gray-300 z-50 drop-menu"
+    style="transform: translateY(-10px)"
+    ><v-row
+      ><v-col cols="12" class="flex justify-between items-center"
+        ><div class="2 flex items-center gap-16">
+          <div
+            class="close flex flex-col ml-4 cursor-pointer w-2 text-center items-center"
+            @click="menu = !menu"
+          >
+            <h1>X</h1>
+            <h1 class="text-sm">close</h1>
+          </div>
+          <div class="links sign-in z-30">
+            <NuxtLink class="cursor-pointer" to="">تسجيل الدخول</NuxtLink> /
+            <NuxtLink class="cursor-pointer" to="">انشاء حساب</NuxtLink>
+          </div>
+        </div>
+        <img
+          class="cursor-pointer"
+          src="/assets/imgs/logo_pal.svg"
+          style="max-width: 150px"
+          alt=""
+      /></v-col>
+      <v-col cols="12" class="flex flex-col"
+        ><h1 class="text-center mt-4 mb-2">القائمة</h1>
+        <div
+          class="line w-80%"
+          style="border-bottom: 1px solid rgb(177, 170, 170)"
+        ></div
+      ></v-col>
+      <v-col cols="12" class="flex items-center justify-center gap-28">
+        <div class="home flex gap-2">
+          <nuxt-link class="hover:text-green-700 cursor-pointer" to=""
+            >حجز استشارة</nuxt-link
+          ><i class="fa-solid fa-user-doctor"></i>
+        </div>
+        <div class="home flex gap-2">
+          <nuxt-link class="hover:text-green-700 cursor-pointer" to=""
+            >الصفحة الرئيسية</nuxt-link
+          ><i class="fa-solid fa-house"></i>
+        </div>
+      </v-col>
+      <v-col cols="12" class="flex items-center justify-center gap-28">
+        <div class="home flex gap-2">
+          <nuxt-link class="hover:text-green-700 cursor-pointer" to=""
+            >المدونة</nuxt-link
+          ><i class="fa-solid fa-file-circle-check"></i>
+        </div>
+        <div class="home flex gap-2">
+          <nuxt-link class="hover:text-green-700 cursor-pointer" to="/questions"
+            >الأسئلة المتكررة</nuxt-link
+          ><i class="fa-solid fa-comments"></i>
+        </div> </v-col
+      ><v-col cols="12"
+        ><div
+          class="line w-80%"
+          style="border-bottom: 1px solid rgb(177, 170, 170)"
+        ></div
+      ></v-col>
+      <v-col cols="12" class="flex flex-col items-center justify-center"
+        ><div class="select-language flex gap-2 justify-end items-center">
+          <h1>:اختيار اللغة</h1>
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <v-select
+          class="mt-10 w-80"
+          v-model="selectedItem"
+          :items="items"
+          label="Language / اللغة"
+        ></v-select> </v-col></v-row
+  ></v-container>
   <div
-    class="bottom-links z-10 w-4/5 md:w-3/5 mx-auto flex items-center justify-center gap-4 h-10 rounded-sm sticky top-20 md:top-32"
+    class="bottom-links z-10 w-4/5 md:w-3/5 mx-auto flex items-center justify-center gap-4 h-10 rounded-sm sticky top-20"
     style="background-color: rgb(173, 177, 176)"
   >
     <div
@@ -60,6 +137,11 @@ const redirectToHome = () => {
     behavior: "smooth",
   });
 };
+const menu = ref(false);
+
+const showMenu = () => {
+  menu.value = !menu.value;
+};
 </script>
 
 <style>
@@ -72,5 +154,18 @@ const redirectToHome = () => {
   .bottom-links {
     display: none;
   }
+}
+/* @media (max-width: 1000px) {
+  .drop-menu {
+    position: fixed;
+  bottom: 17%;
+    right: 0px;
+  }
+} */
+.drop-menu {
+  position: fixed;
+  bottom: 17%;
+  right: 5%;
+  z-index: 11;
 }
 </style>
