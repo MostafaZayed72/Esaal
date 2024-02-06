@@ -73,7 +73,10 @@
           ><i class="fa-solid fa-user-doctor"></i>
         </div>
         <div class="home flex gap-2">
-          <nuxt-link class="hover:text-green-700 cursor-pointer" to=""
+          <nuxt-link
+            class="hover:text-green-700 cursor-pointer"
+            to=""
+            @click="redirectToHome"
             >الصفحة الرئيسية</nuxt-link
           ><i class="fa-solid fa-house"></i>
         </div>
