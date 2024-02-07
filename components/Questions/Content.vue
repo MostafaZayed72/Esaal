@@ -10,7 +10,7 @@
         ><nuxt-link
           class="cursor-pointer flex justify-end items-center gap-1"
           to=""
-          ><p class="font-bold" style="text-decoration: underline">عام</p>
+          ><p class="font-bold" style="text-decoration: underline"  @click="scrollToSection('#section1')" >عام</p>
           <i class="fa-solid fa-arrow-down"></i
         ></nuxt-link>
         <nuxt-link
@@ -32,9 +32,20 @@
             مشاكل أخرى
           </p>
           <i class="fa-solid fa-arrow-down"></i></nuxt-link></v-col
-      ><QuestionsMainDialog_1 /><QuestionsMainDialog_2 /><QuestionsPurchase /><QuestionsCancel /><QuestionsMainDialog_1 /><QuestionsMainDialog_2 /></v-row
+      ><QuestionsMainDialog_2 /><QuestionsPurchase /><QuestionsCancel /><QuestionsProblemDialog_1 /><QuestionsProblemDialog_2 /></v-row
   ></v-container>
 </template>
+
+<script setup>
+const scrollToSection = (hash) => {
+  if (hash) {
+    window.scrollTo({
+      top: document.querySelector(hash).offsetTop,
+      behavior: 'smooth',
+    });
+  }
+};
+</script>
 
 <style>
 @media (min-width: 900px) {
