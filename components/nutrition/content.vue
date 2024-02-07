@@ -116,6 +116,126 @@
               <h1>20/1/2024</h1>
               <i class="fa-regular fa-calendar-days"></i>
             </div>
+          </div></div></v-col
+      ><v-col
+        cols="12"
+        class="flex flex-col items-center justify-center md:flex-row gap-10"
+        ><div
+          class="w-100 card-1 w-1/3 shadow-xl py-8 rounded-xl flex-col justify-center items-center"
+        >
+          <img
+            class="img-1 h-56 rounded-t-xl w-100"
+            src="https://hip-knee.com/wp-content/uploads/2021/01/i-2.jpg"
+            alt=""
+          />
+          <div class="content-1 bg-white z-30">
+            <h1
+              class="font-bold bg-red-darken-2 py-2 px-4 rounded"
+              style="width: fit-content; transform: translateY(-80%)"
+            >
+              استشارات تغذية
+            </h1>
+            <h1 class="font-bold text-xl text-center">
+              أخصائي تغذية علاجية في جدة
+            </h1>
+            <div
+              class="text-1 text-center flex-col justify-center items-center"
+              style="direction: rtl"
+            >
+              <p class="mb-4">
+                كيف تحصل على استشارة فورية مع أخصائية تغذية علاجية في جدة إذا
+                كنت تبحثين عن أخصائية تغذ...
+              </p>
+              <nuxt-link
+                to=""
+                class="text-blue-lighten-1 cursor-pointer"
+                style="text-decoration: underline"
+                >اقرأ المزيد...</nuxt-link
+              >
+            </div>
+            <div class="time-1 flex gap-1 justify-center mt-4">
+              <h1>20/1/2024</h1>
+              <i class="fa-regular fa-calendar-days"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-100 card-1 w-1/3 shadow-xl py-8 rounded-xl flex-col justify-center items-center"
+        >
+          <img
+            class="img-1 h-56 rounded-t-xl w-100"
+            src="https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/Pediatrics-in-Al-Ain-_-Cover-ar05032023.jpg"
+            alt=""
+          />
+          <div class="content-1 bg-white z-30">
+            <h1
+              class="font-bold bg-red-darken-2 py-2 px-4 rounded"
+              style="width: fit-content; transform: translateY(-80%)"
+            >
+              استشارات تغذية
+            </h1>
+            <h1 class="font-bold text-xl text-center">
+              علاج النحافة الشديدة للبنات
+            </h1>
+            <div
+              class="text-1 text-center flex-col justify-center items-center"
+              style="direction: rtl"
+            >
+              <p class="mb-4">
+                9 طرق تساعدك على زيادة الوزن بشكل صحي والحفاظ على قوام مثالي إذا
+                كنت تعانين من النحا...
+              </p>
+
+              <nuxt-link
+                to=""
+                class="text-blue-lighten-1 cursor-pointer"
+                style="text-decoration: underline"
+                >اقرأ المزيد...</nuxt-link
+              >
+            </div>
+            <div class="time-1 flex gap-1 justify-center mt-4">
+              <h1>20/1/2024</h1>
+              <i class="fa-regular fa-calendar-days"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-100 card-1 w-1/3 shadow-xl py-8 rounded-xl flex-col justify-center items-center"
+        >
+          <img
+            class="img-1 h-56 rounded-t-xl w-100"
+            src="https://pbs.twimg.com/media/DeDJZx9X0AMDl56.jpg"
+            alt=""
+          />
+          <div class="content-1 bg-white z-30">
+            <h1
+              class="font-bold bg-red-darken-2 py-2 px-4 rounded"
+              style="width: fit-content; transform: translateY(-80%)"
+            >
+              استشارات تغذية
+            </h1>
+            <h1 class="font-bold text-xl text-center">
+              أفضل دكتور تغذية في جدة لزيادة الوزن
+            </h1>
+            <div
+              class="text-1 text-center flex-col justify-center items-center"
+              style="direction: rtl"
+            >
+              <p class="mb-4">
+                كيف تجد أفضل دكتور تغذية في جدة لطفلك إذا كنت تعاني من النحافة
+                أو تبحث عن أفضل دكتور ...
+              </p>
+              <nuxt-link
+                to=""
+                class="text-blue-lighten-1 cursor-pointer"
+                style="text-decoration: underline"
+                >اقرأ المزيد...</nuxt-link
+              >
+            </div>
+            <div class="time-1 flex gap-1 justify-center mt-4">
+              <h1>20/1/2024</h1>
+              <i class="fa-regular fa-calendar-days"></i>
+            </div>
           </div></div></v-col></v-row
   ></v-container>
 </template>
