@@ -5,10 +5,10 @@
   <v-container class="mt-10"
     ><v-row
       ><v-col cols="12"
-        ><h1 class="text-end font-bold text-3xl mr-10">: مدونتنا</h1></v-col
+        ><h1 class="text-center font-bold text-3xl" style="border-bottom: 1px solid;">: مدونتنا</h1></v-col
       ><v-col
         cols="12"
-        class="flex flex-col md:flex-row items-center md:justify-end gap-4 md:gap-20"
+        class="flex flex-col md:flex-row items-center md:justify-between md:gap-20"
         ><div
           style="width: 200px"
           class="bg-gray-400 icon-table text-center rounded-md py-6 mb-10 cursor-pointer transition duration-300 hover:bg-emerald-900 hover:text-white"
