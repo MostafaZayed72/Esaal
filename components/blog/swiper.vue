@@ -4,6 +4,10 @@
     :grabCursor="true"
     :centeredSlides="true"
     :slidesPerView="'auto'"
+    :autoplay="{
+      delay: 2500,
+      disableOnInteraction: false,
+    }"
     :coverflowEffect="{
       rotate: 50,
       stretch: 0,
@@ -57,7 +61,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 
 export default {
   components: {
@@ -66,7 +70,7 @@ export default {
   },
   setup() {
     return {
-      modules: [EffectCoverflow, Pagination],
+      modules: [EffectCoverflow, Pagination, Autoplay],
     };
   },
 };

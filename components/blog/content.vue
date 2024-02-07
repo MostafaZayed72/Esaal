@@ -1,17 +1,20 @@
 <template>
-  <div class="nav sticky top-0 bg-white shadow-md z-30 pb-4">
-    <QuestionsNav />
-  </div>
   <v-container class="mt-10"
     ><v-row
       ><v-col cols="12"
-        ><h1 class="text-center font-bold text-3xl" style="border-bottom: 1px solid;">: مدونتنا</h1></v-col
+        ><h1
+          class="text-center font-bold text-3xl"
+          style="border-bottom: 1px solid"
+        >
+          : مدونتنا
+        </h1></v-col
       ><v-col
         cols="12"
         class="flex flex-col md:flex-row items-center md:justify-between md:gap-20"
         ><div
           style="width: 200px"
           class="bg-gray-400 icon-table text-center rounded-md py-6 mb-10 cursor-pointer transition duration-300 hover:bg-emerald-900 hover:text-white"
+          @click="toNutrition"
         >
           <i class="fa-solid fa-apple-whole text-5xl"></i>
           <h1 class="font-bold text-lg">استشارات تغذية</h1>
@@ -33,9 +36,12 @@
       ></v-row
     ></v-container
   >
-  <div
-    class="line text-center mx-auto"
-    style="border-bottom: 1px solid rgb(177, 170, 170); width: 100%"
-  ></div>
-  <div class="swiper mt-10"><blogSwiper /></div>
 </template>
+
+<script setup>
+const router = useRouter();
+
+const toNutrition = () => {
+  router.push("/blog/nutrition");
+};
+</script>

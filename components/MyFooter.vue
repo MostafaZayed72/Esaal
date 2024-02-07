@@ -31,8 +31,7 @@
           cols="12"
           class="text-white text-center flex flex-wrap-reverse justify-center gap-5 text-center mb-20"
           ><nuxt-link
-            target="_blank"
-            to=""
+            to="/blog"
             class="hover:text-yellow-500 cursor-pointer"
             >المدونة</nuxt-link
           ><nuxt-link
