@@ -52,9 +52,7 @@
       ></v-col>
       <v-col cols="12" class="flex items-center justify-center gap-28">
         <div class="home flex gap-2">
-          <nuxt-link
-            class="hover:text-green-700 cursor-pointer"
-            to=""
+          <nuxt-link class="hover:text-green-700 cursor-pointer" to=""
             >حجز استشارة</nuxt-link
           ><i class="fa-solid fa-user-doctor"></i>
         </div>
@@ -62,22 +60,19 @@
           <nuxt-link
             class="hover:text-green-700 cursor-pointer"
             to=""
+            @click="menu = !menu"
             >الصفحة الرئيسية</nuxt-link
           ><i class="fa-solid fa-house"></i>
         </div>
       </v-col>
       <v-col cols="12" class="flex items-center justify-center gap-28">
         <div class="home flex gap-2">
-          <nuxt-link
-            class="hover:text-green-700 cursor-pointer"
-            to=""
+          <nuxt-link class="hover:text-green-700 cursor-pointer" to=""
             >المدونة</nuxt-link
           ><i class="fa-solid fa-file-circle-check"></i>
         </div>
         <div class="home flex gap-2">
-          <nuxt-link
-            class="hover:text-green-700 cursor-pointer"
-            to="/questions"
+          <nuxt-link class="hover:text-green-700 cursor-pointer" to="/questions"
             >الأسئلة المتكررة</nuxt-link
           ><i class="fa-solid fa-comments"></i>
         </div> </v-col

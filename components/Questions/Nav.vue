@@ -46,6 +46,7 @@
           src="/assets/imgs/logo_pal.svg"
           style="max-width: 150px"
           alt=""
+          @click="redirectToHome"
       /></v-col>
       <v-col cols="12" class="flex flex-col"
         ><h1 class="text-center mt-4 mb-2">القائمة</h1>
@@ -68,6 +69,7 @@
             target="_blank"
             class="hover:text-green-700 cursor-pointer"
             to=""
+            @click="redirectToHome"
             >الصفحة الرئيسية</nuxt-link
           ><i class="fa-solid fa-house"></i>
         </div>
@@ -113,7 +115,7 @@
 const menu = ref(false);
 const router = useRouter();
 const redirectToHome = () => {
-  router.push('/');
+  router.push("/");
 };
 const showMenu = () => {
   menu.value = !menu.value;
