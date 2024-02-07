@@ -43,5 +43,9 @@ const router = useRouter();
 
 const toNutrition = () => {
   router.push("/blog/nutrition");
+  window.scrollTo({
+    top: 300,
+    behavior: "smooth",
+  });
 };
 </script>

@@ -3,7 +3,8 @@
 import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 export default defineNuxtConfig({
   //...
-  buildModules: ['@nuxtjs/vuetify'],
+
+  buildModules: ["@nuxtjs/vuetify"],
   vuetify: {
     // Vuetify configuration
   },
