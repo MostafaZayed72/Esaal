@@ -21,8 +21,7 @@
       ><v-col cols="12"
         ><div class="time-1 flex gap-1 justify-center mt-4">
           <h1>20/1/2024</h1>
-          <i class="fa-regular fa-calendar-days"></i></div></v-col></v-row
-    ><v-col cols="12" class="mt-20" style="direction: rtl"
+          <i class="fa-regular fa-calendar-days"></i></div></v-col><v-col cols="12" class="mt-20" style="direction: rtl"
       ><h1 class="text-center text-3xl w-100">
         ٧ طرق لعلاج النحافة عند الأطفال وفقدان الشهية
       </h1>
@@ -193,6 +192,7 @@
             <i class="fa-regular fa-calendar-days"></i>
           </div>
         </div></div></v-col
-    ><v-col></v-col>
+    ><v-col></v-col></v-row
+    >
   </v-container>
 </template>

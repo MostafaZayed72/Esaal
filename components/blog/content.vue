@@ -22,9 +22,10 @@
         <div
           style="width: 200px"
           class="bg-gray-400 icon-table text-center rounded-md py-6 mb-10 cursor-pointer hover:bg-emerald-900 hover:text-white"
+          @click="toPsych"
         >
           <i class="fa-solid fa-user-doctor text-5xl"></i>
-          <h1 class="font-bold text-lg">استشارات نفسية</h1>
+          <h1 class="font-bold text-lg">استشارات زوجية ونفسية</h1>
         </div>
         <div
           style="width: 200px"
@@ -47,5 +48,13 @@ const toNutrition = () => {
     top: 300,
     behavior: "smooth",
   });
+}
+const toPsych = () => {
+  router.push("/blog/psych");
+  window.scrollTo({
+    top: 300,
+    behavior: "smooth",
+  });
+
 };
 </script>
