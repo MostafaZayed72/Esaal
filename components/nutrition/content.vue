@@ -116,8 +116,8 @@
               <h1>20/1/2024</h1>
               <i class="fa-regular fa-calendar-days"></i>
             </div>
-          </div></div></v-col
-      >
+          </div></div
+      ></v-col>
       <v-col
         cols="12"
         class="flex flex-col items-center justify-center md:flex-row gap-10"
@@ -227,7 +227,7 @@
                 أو تبحث عن أفضل دكتور ...
               </p>
               <nuxt-link
-                to=""
+                to="/blog/nutrition/best-doctor"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -237,8 +237,8 @@
               <h1>20/1/2024</h1>
               <i class="fa-regular fa-calendar-days"></i>
             </div>
-          </div></div></v-col
-      >
+          </div></div
+      ></v-col>
       <v-col
         cols="12"
         class="flex flex-col items-center justify-center md:flex-row gap-10"
@@ -269,7 +269,7 @@
                 من الراغبين في خسارة الوز...
               </p>
               <nuxt-link
-                to=""
+                to="/blog/nutrition/fat-burning"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -309,7 +309,7 @@
               </p>
 
               <nuxt-link
-                to=""
+                to="/blog/nutrition/keto-diet"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -337,7 +337,7 @@
               استشارات تغذية
             </h1>
             <h1 class="font-bold text-xl text-center">
-              ٩ طرق لعلاج النحافة عند الأطفال وفقدان الشهية
+              ٧ طرق لعلاج النحافة عند الأطفال وفقدان الشهية
             </h1>
             <div
               class="text-1 text-center flex-col justify-center items-center"
@@ -348,7 +348,7 @@
                 كتلة الجسم لمعرفة إذا كان ...
               </p>
               <nuxt-link
-                to=""
+                to="/blog/nutrition/slimness-treatment-7"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -358,8 +358,8 @@
               <h1>20/1/2024</h1>
               <i class="fa-regular fa-calendar-days"></i>
             </div>
-          </div></div></v-col
-      >
+          </div></div
+      ></v-col>
       <v-col
         cols="12"
         class="flex flex-col items-center justify-center md:flex-row gap-10"
@@ -390,7 +390,7 @@
                 الطاقة اللازمة لمواصلة مهام...
               </p>
               <nuxt-link
-                to=""
+                to="/blog/nutrition/bad-food"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -430,7 +430,7 @@
               </p>
 
               <nuxt-link
-                to=""
+                to="/blog/nutrition/best-drinks"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -469,7 +469,7 @@
                 الصيف، إذ أن...
               </p>
               <nuxt-link
-                to=""
+                to="blog/nutrition/good-drinks"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -479,8 +479,8 @@
               <h1>20/1/2024</h1>
               <i class="fa-regular fa-calendar-days"></i>
             </div>
-          </div></div></v-col>
-          </v-row
+          </div></div
+      ></v-col> </v-row
   ></v-container>
 </template>
 
