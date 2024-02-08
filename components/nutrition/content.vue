@@ -469,7 +469,7 @@
                 الصيف، إذ أن...
               </p>
               <nuxt-link
-                to="blog/nutrition/good-drinks"
+                to="/blog/nutrition/good-drinks"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
