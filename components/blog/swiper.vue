@@ -29,10 +29,6 @@
         alt="" /></swiper-slide
     ><swiper-slide
       ><img
-        src="https://cdn.statically.io/gh/AhmedMSoliman160/blog_20230320v01/main/SliderImages/311052277_1179410989330370_2154348161242048820_n.jpg"
-        alt="" /></swiper-slide
-    ><swiper-slide
-      ><img
         src="https://cdn.statically.io/gh/AhmedMSoliman160/blog_20230320v01/main/SliderImages/295821614_1127191414552328_8907610229556513929_n.jpg"
         alt="" /></swiper-slide
     ><swiper-slide
