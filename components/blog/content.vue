@@ -28,6 +28,7 @@
           <h1 class="font-bold text-lg">استشارات زوجية ونفسية</h1>
         </div>
         <div
+        @click="toMedical"
           style="width: 200px"
           class="bg-gray-400 icon-table md:mr-10 text-center rounded-md py-6 mb-10 cursor-pointer hover:bg-emerald-900 hover:text-white"
         >
@@ -55,6 +56,12 @@ const toPsych = () => {
     top: 300,
     behavior: "smooth",
   });
-
+};
+const toMedical = () => {
+  router.push("/blog/medical");
+  window.scrollTo({
+    top: 300,
+    behavior: "smooth",
+  });
 };
 </script>

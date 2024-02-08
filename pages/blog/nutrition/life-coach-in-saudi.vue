@@ -79,7 +79,7 @@
         >
           <img
             class="img-1 h-56 rounded-t-xl w-100"
-            src="https://cdn.statically.io/gh/AhmedMSoliman160/blog_20230320v01/main/ArticlesImages/%D8%AD%D8%B1%D9%82-%D8%A7%D9%84%D8%AF%D9%87%D9%88%D9%86-1.jpg"
+            src="https://cdn.statically.io/gh/AhmedMSoliman160/blog_20230320v01/main/ArticlesImages/Tired-or-Lazy-800x502.jpg"
             alt=""
           />
           <div class="content-1 bg-white z-30">
@@ -90,18 +90,18 @@
               استشارات تغذية
             </h1>
             <h1 class="font-bold text-xl text-center">
-              تعرف على طرق حرق الدهون بدون رياضة
+              6 أطعمة تسبب الخمول والكسل تجنب تناولها
             </h1>
             <div
               class="text-1 text-center flex-col justify-center items-center"
               style="direction: rtl"
             >
               <p class="mb-4">
-                هل يمكن حرق الدهون بدون رياضة؟؟ يتردد هذا السؤال في أذهان الكثير
-                من الراغبين في خسارة الوز...
+                وجد العديد من الخيارات الغذائية التي يُمكنك الحصول عليها؛ لتوفير
+                الطاقة اللازمة لمواصلة مهام...
               </p>
               <nuxt-link
-                to=""
+                to="/blog/nutrition/bad-food"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -118,7 +118,7 @@
         >
           <img
             class="img-1 h-56 rounded-t-xl w-100"
-            src="https://cdn.statically.io/gh/AhmedMSoliman160/blog_20230320v01/main/ArticlesImages/10.png"
+            src="https://cdn.statically.io/gh/AhmedMSoliman160/blog_20230320v01/main/ArticlesImages/%D9%85%D8%B4%D8%B1%D9%88%D8%A8%D8%A7%D8%AA-%D8%B5%D8%AD%D9%8A%D8%A9.jpg"
             alt=""
           />
           <div class="content-1 bg-white z-30">
@@ -129,19 +129,19 @@
               استشارات تغذية
             </h1>
             <h1 class="font-bold text-xl text-center">
-              رجيم الكيتو دايت لعلاج تكيس المبايض
+              أفضل 5 مشروبات صحية لحرق الدهون بعد الاكل
             </h1>
             <div
               class="text-1 text-center flex-col justify-center items-center"
               style="direction: rtl"
             >
               <p class="mb-4">
-                تُعد متلازمة تكيس المبايض PCOS إحدى الاضطرابات الشائعة التي
-                تُصيب 4-20% من النس...
+                يعتبر تناول المشروبات الصحية لحرق الدهون بعد الاكل مباشرة، أفضل
+                طريقة لحرق الدهون ...
               </p>
 
               <nuxt-link
-                to=""
+                to="/blog/nutrition/best-drinks"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -158,7 +158,7 @@
         >
           <img
             class="img-1 h-56 rounded-t-xl w-100"
-            src="https://mediaaws.almasryalyoum.com/news/verylarge/2021/06/25/1565453_0.jpg"
+            src="https://cdn.statically.io/gh/AhmedMSoliman160/blog_20230320v01/main/ArticlesImages/juice-1.jpg"
             alt=""
           />
           <div class="content-1 bg-white z-30">
@@ -169,18 +169,18 @@
               استشارات تغذية
             </h1>
             <h1 class="font-bold text-xl text-center">
-              ٩ طرق لعلاج النحافة عند الأطفال وفقدان الشهية
+              مشروبات طبيعية تقي من العطش في فصل الصيف
             </h1>
             <div
               class="text-1 text-center flex-col justify-center items-center"
               style="direction: rtl"
             >
               <p class="mb-4">
-                ٩ طرق لعلاج النحافة عند الأطفال وفقدان الشهية الاعتماد على مؤشر
-                كتلة الجسم لمعرفة إذا كان ...
+                يبدأ الجميع في البحث عن مشروبات طبيعية تروي العطش، مع اشتداد شمس
+                الصيف، إذ أن...
               </p>
               <nuxt-link
-                to=""
+                to="/blog/nutrition/good-drinks"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -190,6 +190,7 @@
               <h1>20/1/2024</h1>
               <i class="fa-regular fa-calendar-days"></i>
             </div>
-          </div></div></v-col></v-row
+          </div></div
+      ></v-col></v-row
   ></v-container>
 </template>

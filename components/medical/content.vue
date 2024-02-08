@@ -9,7 +9,7 @@
         >
           <img
             class="img-1 h-56 rounded-t-xl w-100"
-            src="https://media.gemini.media/img/large/2020/7/14/2020_7_14_21_26_30_595.jpg"
+            src="https://cdn.statically.io/gh/AhmedMSoliman160/blog_20230320v01/main/ArticlesImages/%D8%AF%D9%88%D8%A7%D8%A1%20%D8%AC%D8%A7%D8%A8%D8%AA%D9%8A%D9%86%20300%20(1)_638390992436026357.jpg"
             alt=""
           />
           <div class="content-1 bg-white z-30">
@@ -17,22 +17,19 @@
               class="font-bold bg-red-darken-2 py-2 px-4 rounded"
               style="width: fit-content; transform: translateY(-80%)"
             >
-                            استشارات زوجية ونفسية
-
+              استشارات طبية
             </h1>
-            <h1 class="font-bold text-xl text-center">
-              هل تعود الأعصاب بعد ترك العادة
-            </h1>
+            <h1 class="font-bold text-xl text-center">دواء جابتين 300</h1>
             <div
               class="text-1 text-center flex-col justify-center items-center"
               style="direction: rtl"
             >
               <p class="mb-4">
-                هل تعود الأعصاب بعد ترك العادة ؟ تاُثير العادة السرية على الرجل
-                وطرق استعادة الأعصاب بعد...
+                لا تتناول دواء جابتين 300 لهذه الأسباب دواء جابتين 300 هو دواء
+                مضاد للصرع ومضاد للألم...
               </p>
               <nuxt-link
-                to="/blog/psych/neurological-treatment"
+                to="/blog/medical/gabapentin"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -49,7 +46,7 @@
         >
           <img
             class="img-1 h-56 rounded-t-xl w-100"
-            src="https://ccute.cc/wp-content/uploads/2018/10/646-1.jpg"
+            src="https://cdn.statically.io/gh/AhmedMSoliman160/blog_20230320v01/main/ArticlesImages/%D8%A3%D8%B9%D8%B1%D8%A7%D8%B6%20%D8%A7%D9%84%D8%AA%D9%88%D8%AD%D8%AF%20%D8%B9%D9%86%D8%AF%20%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84_638314944086198482.jpg"
             alt=""
           />
           <div class="content-1 bg-white z-30">
@@ -57,23 +54,22 @@
               class="font-bold bg-red-darken-2 py-2 px-4 rounded"
               style="width: fit-content; transform: translateY(-80%)"
             >
-                            استشارات زوجية ونفسية
-
+              استشارات طبية
             </h1>
             <h1 class="font-bold text-xl text-center">
-              أضرار الافلام الاباحية على النفسية
+              أعراض التوحد عند الأطفال
             </h1>
             <div
               class="text-1 text-center flex-col justify-center items-center"
               style="direction: rtl"
             >
               <p class="mb-4">
-                أضرار الأفلام الإباحية على النفسية 5 أضرار خطيرة تسببها مشاهدة
-                الإباحية للنساء أبرز أضرار الأفلام ...
+                أعراض التوحد عند الأطفال والعلاج المناسب لكل مرحلة عمرية سنقوم
+                في هذا المقال بتتبع أعراض...
               </p>
 
               <nuxt-link
-                to="/blog/psych/damages"
+                to="/blog/medical/autism"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -90,7 +86,7 @@
         >
           <img
             class="img-1 h-56 rounded-t-xl w-100"
-            src="https://cdn.statically.io/gh/AhmedMSoliman160/blog_20230320v01/main/ArticlesImages/%D9%81%D9%88%D8%A7%D8%A6%D8%AF%20%D8%A7%D9%84%D8%A5%D9%82%D9%84%D8%A7%D8%B9%20%D8%B9%D9%86%20%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AD%D9%8A%D8%A9%20(2)%20(1)_638419465706109471.jpg"
+            src="https://cdn.statically.io/gh/AhmedMSoliman160/blog_20230320v01/main/ArticlesImages/%D8%AF%D9%83%D8%AA%D9%88%D8%B1%20%D8%B3%D9%83%D8%B1%20%D8%B4%D8%A7%D8%B7%D8%B1_638205479194884283.jpg"
             alt=""
           />
           <div class="content-1 bg-white z-30">
@@ -98,22 +94,21 @@
               class="font-bold bg-red-darken-2 py-2 px-4 rounded"
               style="width: fit-content; transform: translateY(-80%)"
             >
-                            استشارات زوجية ونفسية
-
+              استشارات طبية
             </h1>
             <h1 class="font-bold text-xl text-center">
-              فوائد الإقلاع عن الإباحية
+              كيف تختار دكتور سكر شاطر؟
             </h1>
             <div
               class="text-1 text-center flex-col justify-center items-center"
               style="direction: rtl"
             >
               <p class="mb-4">
-                5 فوائد الإقلاع عن الإباحية أهمها مرتبطة بالعمل تظهر فوائد
-                الإقلاع عن الإباحية في مجالات متعدد...
+                كيف تختار دكتور سكر شاطر حسب مكان إقامتك؟ البحث عن دكتور سكر
+                شاطر أمر ضروري لمرضى الس...
               </p>
               <nuxt-link
-                to="/blog/psych/benefits"
+                to="/blog/medical/diabetes"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -133,7 +128,7 @@
         >
           <img
             class="img-1 h-56 rounded-t-xl w-100"
-            src="https://cdn.statically.io/gh/AhmedMSoliman160/blog_20230320v01/main/ArticlesImages/%D9%85%D8%AE%D8%AF%D8%B1%20%D8%A7%D9%84%D8%A8%D9%88%D8%AF%D8%B1%20(1)_638398817769928305.jpg"
+            src="https://cdn.statically.io/gh/AhmedMSoliman160/blog_20230320v01/main/ArticlesImages/vitamin-d-1.jpg"
             alt=""
           />
           <div class="content-1 bg-white z-30">
@@ -141,20 +136,21 @@
               class="font-bold bg-red-darken-2 py-2 px-4 rounded"
               style="width: fit-content; transform: translateY(-80%)"
             >
-                            استشارات زوجية ونفسية
-
+              استشارات طبية
             </h1>
-            <h1 class="font-bold text-xl text-center">مخدر البودر</h1>
+            <h1 class="font-bold text-xl text-center">
+              ما العلاقة بين أعراض نقص فيتامين د والإكتئاب؟
+            </h1>
             <div
               class="text-1 text-center flex-col justify-center items-center"
               style="direction: rtl"
             >
               <p class="mb-4">
-                أعراض خطيرة لمخدر البودر مخدر البودر أو الكيتامين هو مخدر
-                اصطناعي يستخدم في التخدير...
+                يصنف الاكتئاب ضمن أعراض نقص فيتامين د النفسية، بسبب وجود ارتباط
+                كبير بين مستقبلات...
               </p>
               <nuxt-link
-                to="/blog/psych/powder-drug"
+                to="/blog/medical/vitamin-d"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -171,7 +167,7 @@
         >
           <img
             class="img-1 h-56 rounded-t-xl w-100"
-            src="https://cdn.statically.io/gh/AhmedMSoliman160/blog_20230320v01/main/ArticlesImages/%D9%81%D9%8A%D9%84%D8%A7%D8%B2%D9%88%D9%81%D9%8A%D8%B1%20(1)_638398829367699435.jpg"
+            src="https://cdn.statically.io/gh/AhmedMSoliman160/blog_20230320v01/main/ArticlesImages/%D8%A7%D8%B6%D8%B7%D8%B1%D8%A7%D8%A8%D8%A7%D8%AA%20-%D8%A7%D9%84%D9%86%D9%88%D9%85-%20%D8%B9%D9%86-%20%D8%A7%D9%84%D8%B1%D8%B6%D9%8A%D8%B9.jpg"
             alt=""
           />
           <div class="content-1 bg-white z-30">
@@ -179,21 +175,22 @@
               class="font-bold bg-red-darken-2 py-2 px-4 rounded"
               style="width: fit-content; transform: translateY(-80%)"
             >
-                            استشارات زوجية ونفسية
-
+              استشارات طبية
             </h1>
-            <h1 class="font-bold text-xl text-center">فيلازوفير</h1>
+            <h1 class="font-bold text-xl text-center">
+              ما هو علاج اضطرابات النوم عند الرضع؟
+            </h1>
             <div
               class="text-1 text-center flex-col justify-center items-center"
               style="direction: rtl"
             >
               <p class="mb-4">
-                سعر دواء فيلازوفير في مصر والسعودية يستخدم دواء فيلازوفير لعلاج
-                الاكتئاب، ويمكن استخدامه...
+                اضطرابات النوم عند الرضع من أكثر الأمور التي تورق الأمهات الجدد،
+                وتستمر حوالي 3 أشهر، حتى ينتظم...
               </p>
 
               <nuxt-link
-                to="/blog/psych/vilazovir"
+                to="/blog/medical/infants"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -210,7 +207,7 @@
         >
           <img
             class="img-1 h-56 rounded-t-xl w-100"
-            src="https://cdn.statically.io/gh/AhmedMSoliman160/blog_20230320v01/main/ArticlesImages/%D8%A7%D9%81%D9%8A%D8%B1%D9%88%D9%85%D9%8A%D9%84%D8%A7%D9%86%20(1)_638398847148566219.jpg"
+            src="https://cdn.statically.io/gh/AhmedMSoliman160/blog_20230320v01/main/ArticlesImages/older-man-trying-to-catch-his-breath.jpg"
             alt=""
           />
           <div class="content-1 bg-white z-30">
@@ -218,19 +215,19 @@
               class="font-bold bg-red-darken-2 py-2 px-4 rounded"
               style="width: fit-content; transform: translateY(-80%)"
             >
-              استشارات زوجية ونفسية
+              استشارات طبية
             </h1>
-            <h1 class="font-bold text-xl text-center">افيروميلان</h1>
+            <h1 class="font-bold text-xl text-center">
+              أسباب ضيق التنفس والكتمة عند النوم وكيفية علاجها
+            </h1>
             <div
               class="text-1 text-center flex-col justify-center items-center"
               style="direction: rtl"
             >
               <p class="mb-4">
-                3 أفضل بدائل لدواء افيروميلان في السوق المصري الآن أفيروميلان هو
-                دواء يستخدم لعلاج الألم...
-              </p>
+                يُعاني الكثير من الأشخاص من ضيق التنفس والكتمة، إذ يوصف أحيانًا على أنه نقص في الهواء...              </p>
               <nuxt-link
-                to="/blog/psych/Averomelan"
+                to="/blog/medical/dyspnea"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link

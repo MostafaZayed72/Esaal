@@ -110,7 +110,7 @@
                 الطاقة اللازمة لمواصلة مهام...
               </p>
               <nuxt-link
-                to=""
+                to="/blog/nutrition/bad-food"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -150,7 +150,7 @@
               </p>
 
               <nuxt-link
-                to=""
+                to="/blog/nutrition/best-drinks"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -189,7 +189,7 @@
                 الصيف، إذ أن...
               </p>
               <nuxt-link
-                to=""
+                to="/blog/nutrition/good-drinks"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -199,6 +199,7 @@
               <h1>20/1/2024</h1>
               <i class="fa-regular fa-calendar-days"></i>
             </div>
-          </div></div></v-col></v-row
+          </div></div
+      ></v-col> </v-row
   ></v-container>
 </template>

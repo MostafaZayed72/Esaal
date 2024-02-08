@@ -182,7 +182,7 @@
                 المجالات التي تحظى باهتمام ...
               </p>
               <nuxt-link
-                to=""
+                to="/blog/nutrition/life-coach-in-saudi"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -192,6 +192,7 @@
               <h1>20/1/2024</h1>
               <i class="fa-regular fa-calendar-days"></i>
             </div>
-          </div></div></v-col></v-row
+          </div></div
+      ></v-col></v-row
   ></v-container>
 </template>
