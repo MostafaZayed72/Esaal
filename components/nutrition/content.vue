@@ -67,7 +67,7 @@
               </p>
 
               <nuxt-link
-                to=""
+                to="/blog/nutrition/life-coach-in-egypt"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -106,7 +106,7 @@
                 المجالات التي تحظى باهتمام ...
               </p>
               <nuxt-link
-                to=""
+                to="/blog/nutrition/life-coach-in-saudi"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -117,7 +117,8 @@
               <i class="fa-regular fa-calendar-days"></i>
             </div>
           </div></div></v-col
-      ><v-col
+      >
+      <v-col
         cols="12"
         class="flex flex-col items-center justify-center md:flex-row gap-10"
         ><div
@@ -147,7 +148,7 @@
                 كنت تبحثين عن أخصائية تغذ...
               </p>
               <nuxt-link
-                to=""
+                to="/blog/nutrition/specialist"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -187,7 +188,7 @@
               </p>
 
               <nuxt-link
-                to=""
+                to="/blog/nutrition/slimness-treatment"
                 class="text-blue-lighten-1 cursor-pointer"
                 style="text-decoration: underline"
                 >اقرأ المزيد...</nuxt-link
@@ -237,7 +238,8 @@
               <i class="fa-regular fa-calendar-days"></i>
             </div>
           </div></div></v-col
-      ><v-col
+      >
+      <v-col
         cols="12"
         class="flex flex-col items-center justify-center md:flex-row gap-10"
         ><div
@@ -357,7 +359,8 @@
               <i class="fa-regular fa-calendar-days"></i>
             </div>
           </div></div></v-col
-      ><v-col
+      >
+      <v-col
         cols="12"
         class="flex flex-col items-center justify-center md:flex-row gap-10"
         ><div
@@ -476,7 +479,8 @@
               <h1>20/1/2024</h1>
               <i class="fa-regular fa-calendar-days"></i>
             </div>
-          </div></div></v-col></v-row
+          </div></div></v-col>
+          </v-row
   ></v-container>
 </template>
 
