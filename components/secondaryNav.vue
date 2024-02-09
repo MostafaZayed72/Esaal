@@ -121,7 +121,7 @@
               <h1 class="text-gray-lighten-4 text-center p-4">اختر مجالاً*</h1>
 
               <nuxt-link
-                to=""
+                to="/nutrition"
                 class="reservation flex gap-2 p-4 justify-center cursor-pointer hover:text-green-700"
                 ><h1>التغذية واللياقة</h1>
                 <i class="fa-solid fa-apple-whole"></i

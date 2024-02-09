@@ -57,7 +57,7 @@
         ></div
       ></v-col>
       <v-col cols="12" class="flex items-center justify-center gap-28">
-        <div class="home flex gap-2">
+        <div class="home flex gap-2" @click="dialog = true">
           <nuxt-link class="hover:text-green-700 cursor-pointer" to=""
             >حجز استشارة</nuxt-link
           ><i class="fa-solid fa-user-doctor"></i>
@@ -114,7 +114,7 @@
         <h1 class="text-gray-lighten-4 text-center p-4">اختر مجالاً*</h1>
 
         <nuxt-link
-          to=""
+          to="/nutrition"
           class="reservation flex gap-2 p-4 justify-center cursor-pointer hover:text-green-700"
           ><h1>التغذية واللياقة</h1>
           <i class="fa-solid fa-apple-whole"></i
