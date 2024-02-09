@@ -8,8 +8,13 @@
       >mdi-menu</v-icon
     >
     <div class="links sign-in z-30">
-      <NuxtLink class="cursor-pointer" to="">تسجيل الدخول</NuxtLink> /
-      <NuxtLink class="cursor-pointer" to="">انشاء حساب</NuxtLink>
+      <NuxtLink class="cursor-pointer hover:text-white" to=""
+        >تسجيل الدخول</NuxtLink
+      >
+      /
+      <NuxtLink class="cursor-pointer hover:text-white" to=""
+        >انشاء حساب</NuxtLink
+      >
     </div>
     <img
       class="absolute right-5 md:right-16 cursor-pointer z-30"
@@ -18,6 +23,7 @@
       alt=""
     />
   </div>
+  <!-- START MENU -->
   <v-container
     v-if="menu"
     class="menu bg-gray-300"
@@ -94,11 +100,51 @@
           label="Language / اللغة"
         ></v-select> </v-col></v-row
   ></v-container>
+  <!-- START DIALOG -->
+  <div class="text-center">
+    <v-dialog v-model="dialog" width="500px">
+      <v-card>
+        <div
+          class="reservation flex gap-2 p-4 justify-center"
+          style="border-bottom: 1px solid rgb(134, 129, 129)"
+        >
+          <h1>حجز استشارة</h1>
+          <i class="fa-solid fa-toilet-paper"></i>
+        </div>
+        <h1 class="text-gray-lighten-4 text-center p-4">اختر مجالاً*</h1>
+
+        <nuxt-link
+          to=""
+          class="reservation flex gap-2 p-4 justify-center cursor-pointer hover:text-green-700"
+          ><h1>التغذية واللياقة</h1>
+          <i class="fa-solid fa-apple-whole"></i
+        ></nuxt-link>
+
+        <nuxt-link
+          class="reservation flex gap-2 p-4 justify-center cursor-pointer hover:text-green-700"
+        >
+          <h1>الصحة النفسية والاستشارات الزوجية</h1>
+          <i class="fa-solid fa-user-doctor"></i>
+        </nuxt-link>
+        <nuxt-link
+          class="reservation flex gap-2 p-4 justify-center cursor-pointer hover:text-green-700"
+        >
+          <h1>استشارات طبية</h1>
+          <i class="fa-solid fa-stethoscope"></i>
+        </nuxt-link>
+        <v-card-actions>
+          <v-btn color="green-darken-2" block @click="dialog = false"
+            >Close</v-btn
+          >
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+  </div>
 </template>
 
 <script setup>
 const menu = ref(false);
-
+const dialog = ref(false);
 const showMenu = () => {
   menu.value = !menu.value;
 };

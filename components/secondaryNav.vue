@@ -31,9 +31,6 @@
       @click="redirectToHome"
     />
   </div>
-  <v-icon size="50px" class="ml-10 cursor-pointer" @click="showMenu"
-    >mdi-menu</v-icon
-  >
   <v-container
     v-if="menu"
     class="menu bg-gray-300 z-50 drop-menu mx-auto"
@@ -67,7 +64,7 @@
         ></div
       ></v-col>
       <v-col cols="12" class="flex items-center justify-center gap-28">
-        <div class="home flex gap-2">
+        <div class="home flex gap-2" @click="dialog = true">
           <nuxt-link class="hover:text-green-700 cursor-pointer" to=""
             >حجز استشارة</nuxt-link
           ><i class="fa-solid fa-user-doctor"></i>
@@ -108,8 +105,51 @@
           v-model="selectedItem"
           :items="items"
           label="Language / اللغة"
-        ></v-select> </v-col></v-row
-  ></v-container>
+        ></v-select
+        ><!-- START DIALOG -->
+        <div class="text-center">
+          <v-dialog v-model="dialog" width="500px">
+            <v-card>
+              <div
+                @click="dialog = true"
+                class="reservation flex gap-2 p-4 justify-center"
+                style="border-bottom: 1px solid rgb(134, 129, 129)"
+              >
+                <h1>حجز استشارة</h1>
+                <i class="fa-solid fa-toilet-paper"></i>
+              </div>
+              <h1 class="text-gray-lighten-4 text-center p-4">اختر مجالاً*</h1>
+
+              <nuxt-link
+                to=""
+                class="reservation flex gap-2 p-4 justify-center cursor-pointer hover:text-green-700"
+                ><h1>التغذية واللياقة</h1>
+                <i class="fa-solid fa-apple-whole"></i
+              ></nuxt-link>
+
+              <nuxt-link
+                class="reservation flex gap-2 p-4 justify-center cursor-pointer hover:text-green-700"
+              >
+                <h1>الصحة النفسية والاستشارات الزوجية</h1>
+                <i class="fa-solid fa-user-doctor"></i>
+              </nuxt-link>
+              <nuxt-link
+                class="reservation flex gap-2 p-4 justify-center cursor-pointer hover:text-green-700"
+              >
+                <h1>استشارات طبية</h1>
+                <i class="fa-solid fa-stethoscope"></i>
+              </nuxt-link>
+              <v-card-actions>
+                <v-btn color="green-darken-2" block @click="dialog = false"
+                  >Close</v-btn
+                >
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
+        </div>
+      </v-col></v-row
+    ></v-container
+  >
   <div
     class="bottom-links z-10 w-4/5 md:w-3/5 mx-auto flex items-center justify-center gap-4 h-10 rounded-sm sticky top-20"
     style="background-color: rgb(173, 177, 176)"
@@ -123,6 +163,7 @@
     </div>
     <h1 class="text-lg">أو</h1>
     <div
+      @click="dialog = true"
       class="reservation cursor-pointer py-1 flex justify-center items-center gap-2"
       style="width: 200px; background-color: rgb(0, 51, 51)"
     >
@@ -134,13 +175,15 @@
 
 <script setup>
 const router = useRouter();
+const dialog = ref(false);
+const menu = ref(false);
 const redirectToHome = () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
+  menu.value = false;
 };
-const menu = ref(false);
 
 const showMenu = () => {
   menu.value = !menu.value;
