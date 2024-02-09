@@ -9,7 +9,7 @@
           item-title="name"
           item-value="id"
           v-model="selectedMedicalItem"
-          label="اختر مجالاً/"
+          label="اختر مجالاً" 
         >
           <template #item="{ item, props }">
             <v-list-item v-bind="props">
