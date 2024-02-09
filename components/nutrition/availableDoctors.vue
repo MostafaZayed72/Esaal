@@ -47,8 +47,7 @@ const doctors = [
   {
     name: "د/أحمد متولي",
     subtitle: "أخصائي تغذية",
-    image:
-      "https://cdn.altibbi.com/cdn/cache/1000x500/image/2020/03/17/9f40f119864f12b73a8d24a2f94ac454.png.webp",
+    image: "https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?w=740&t=st=1707507653~exp=1707508253~hmac=8b5f43967ce74599905c90e60741ccbefbb150224a9f7740d8aad016427b4d22",
   },
 ];
 </script>
