@@ -26,7 +26,7 @@
 </template>
 
 <script setup>
-const selectedItem = ref(null);
+const selectedMedicalItem = ref(null);
 const items = [
   {
     id: 0,
