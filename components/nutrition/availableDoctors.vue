@@ -18,12 +18,12 @@
                 :src="doctor.image"
                 alt=""
                 class="w-28 h-28 rounded-full"
-                style="border: 1px solid rgb(209, 204, 204)"
+                style="border: 1px solid rgb(133, 128, 128)"
               />
               <div
                 class="rounded-full absolute bottom-32 right-16 w-5 h-5 bg-green"
               ></div>
-              <h1 class="font-bold mt-2">{{ doctor.name }}</h1>
+              <h1 class="font-bold mt-2 text-xl">{{ doctor.name }}</h1>
               <h1 class="text-gray-700 text-sm mt-1">{{ doctor.subtitle }}</h1>
               <nuxt-link
                 to=""
