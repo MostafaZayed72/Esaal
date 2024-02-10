@@ -76,11 +76,18 @@
                 <h1 style="direction: rtl">{{ item.value_2 }} جنيه/استشارة</h1>
               </div>
               <div class="next-time flex gap-4">
-                <div class="reservation flex flex-col gap-4 mr-32 mt-14 text-center">
-                  <nuxt-link class="px-2 py-1 bg-green-400 rounded-md md:px-10" to=""
+                <div
+                  class="reservation flex flex-col gap-4 mr-32 mt-14 text-center"
+                >
+                  <nuxt-link
+                    class="px-2 py-1 bg-green-400 rounded-md md:px-10"
+                    to=""
                     >احجز موعد</nuxt-link
                   >
-                  <nuxt-link class="r px-2 py-1 rounded-md md:px-10" to="" style="border: 1px solid;"
+                  <nuxt-link
+                    class="r px-2 py-1 rounded-md md:px-10"
+                    to=""
+                    style="border: 1px solid"
                     >مواعيد أخرى</nuxt-link
                   >
                 </div>
@@ -141,7 +148,7 @@ const data = ref([
     next_time: "8.30 م - 9.30 م",
     rate: 4.8,
     image:
-      "https://img.freepik.com/free-photo/portrait-attractive-male-doctor_329181-622.jpg?size=626&ext=jpg&ga=GA1.1.1483280730.1707239230&semt=sph",
+      "https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg?crop=0.66698xw:1xh;center,top&resize=640:*",
   },
   {
     name: "مصطفى زيدان",
