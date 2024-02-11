@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-200">
     <v-container>
-      <div class="sort flex flex-col-reverse md:flex-row justify-end gap-6 md:gap-40 rounded">
+      <div class="sort flex flex-col md:flex-row justify-end gap-6 md:gap-40 rounded">
         <div class="pb-2">
           <input
             v-model="searchTerm"
