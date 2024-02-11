@@ -12,7 +12,7 @@
             :key="doctor.image"
           >
             <div
-              class="doctor relative flex flex-col items-center rounded-xl bg-white px-10 py-8"
+              class="doctor flex flex-col items-center rounded-xl bg-white px-10 py-8"
             >
               <img
                 :src="doctor.image"
@@ -21,7 +21,8 @@
                 style="border: 1px solid rgb(133, 128, 128)"
               />
               <div
-                class="rounded-full absolute bottom-32 right-16 w-5 h-5 bg-green"
+                class="rounded-full w-5 h-5 bg-green"
+                style="transform: translate(43px, -30px)"
               ></div>
               <h1 class="font-bold mt-2 text-xl">{{ doctor.name }}</h1>
               <h1 class="text-gray-700 text-sm mt-1">{{ doctor.subtitle }}</h1>
