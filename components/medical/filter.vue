@@ -80,12 +80,12 @@
                     class="reservation w-32 flex flex-col gap-4 md:mr-32 mt-14 text-center"
                   >
                     <nuxt-link
-                      class="px-2 py-1 bg-green-400 rounded-md md:px-10"
+                      class="px-2 py-1 bg-green-400 rounded-md md:px-10 cursor-pointer"
                       to=""
                       >احجز موعد</nuxt-link
                     >
                     <nuxt-link
-                      class="r px-2 py-1 rounded-md md:px-10"
+                      class="r px-2 py-1 rounded-md md:px-10 cursor-pointer"
                       to=""
                       style="border: 1px solid"
                       >مواعيد أخرى</nuxt-link
