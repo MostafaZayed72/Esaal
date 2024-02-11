@@ -5,7 +5,7 @@
   >
     <v-container
       ><v-row
-        ><v-col cols="12" class="flex justify-end items-center gap-10"
+        ><v-col cols="12" class="flex flex-col md:flex-row justify-end items-center gap-10"
           ><div
             class="doctors flex justify-end"
             v-for="doctor in doctors"
