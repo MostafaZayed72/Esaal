@@ -128,6 +128,7 @@ const sortOrder = ref("asc");
 const data = ref([
   {
     name: "أحمد متولي",
+    date: "2023-02-19",
     value: 150,
     subtitle: "أخصائي تغذية",
     experts: 4,
@@ -140,11 +141,12 @@ const data = ref([
   },
   {
     name: "محمد بيومي",
+    date: "2023-02-14",
     value: 250,
     subtitle: "استشاري تغذية",
     experts: 9,
     value_2: 150,
-    next_day: "25 FEB",
+    next_day: "14 FEB",
     next_time: "8.30 م - 9.30 م",
     rate: 4.8,
     image:
@@ -152,11 +154,12 @@ const data = ref([
   },
   {
     name: "مصطفى زيدان",
+    date: "2023-02-29",
     value: 300,
     subtitle: "أخصائي تغذية",
     experts: 6,
     value_2: 150,
-    next_day: "23 FEB",
+    next_day: "29 FEB",
     next_time: "10 م - 9 م",
     rate: 4.1,
     image:
@@ -164,11 +167,12 @@ const data = ref([
   },
   {
     name: "محمود طعيمة",
+    date: "2023-02-17",
     value: 500,
     subtitle: "استشاري تغذية",
     experts: 7,
     value_2: 200,
-    next_day: "27 FEB",
+    next_day: "17 FEB",
     next_time: "3.30 م - 4.30 م",
     rate: 4.9,
     image:
@@ -182,6 +186,19 @@ const sortedData = computed(() => {
       return a.value - b.value;
     } else {
       return b.value - a.value;
+    }
+  });
+});
+
+const sortedDate = computed(() => {
+  return [...data.value].sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+
+    if (sortOrder.value === "asc") {
+      return dateA - dateB;
+    } else {
+      return dateB - dateA;
     }
   });
 });
