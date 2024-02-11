@@ -120,13 +120,13 @@
           <i class="fa-solid fa-apple-whole"></i
         ></nuxt-link>
 
-        <nuxt-link
+        <nuxt-link to="/psych"
           class="reservation flex gap-2 p-4 justify-center cursor-pointer hover:text-green-700"
         >
           <h1>الصحة النفسية والاستشارات الزوجية</h1>
           <i class="fa-solid fa-user-doctor"></i>
         </nuxt-link>
-        <nuxt-link
+        <nuxt-link to="/medical"
           class="reservation flex gap-2 p-4 justify-center cursor-pointer hover:text-green-700"
         >
           <h1>استشارات طبية</h1>
