@@ -1,7 +1,94 @@
+<script setup>
+import { ref, computed } from "vue";
+const searchTerm = ref("");
+
+const filteredData = computed(() => {
+  return sortedData.value.filter((item) =>
+    item.name.includes(searchTerm.value)
+  );
+});
+const label = ref(false);
+
+const sortOrder = ref("asc");
+const data = ref([
+  {
+    name: "أحمد متولي",
+    date: "2023-02-19",
+    value: 150,
+    subtitle: "أخصائي تغذية",
+    experts: 4,
+    value_2: 100,
+    next_day: "19 FEB",
+    next_time: "10.30 م - 11.30 م",
+    rate: 4.5,
+    image:
+      " https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?w=740&t=st=1707507653~exp=1707508253~hmac=8b5f43967ce74599905c90e60741ccbefbb150224a9f7740d8aad016427b4d22",
+  },
+  {
+    name: "محمد بيومي",
+    date: "2023-02-14",
+    value: 250,
+    subtitle: "استشاري تغذية",
+    experts: 9,
+    value_2: 150,
+    next_day: "14 FEB",
+    next_time: "8.30 م - 9.30 م",
+    rate: 4.8,
+    image:
+      "https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg?crop=0.66698xw:1xh;center,top&resize=640:*",
+  },
+  {
+    name: "مصطفى زيدان",
+    date: "2023-02-29",
+    value: 300,
+    subtitle: "أخصائي تغذية",
+    experts: 6,
+    value_2: 150,
+    next_day: "29 FEB",
+    next_time: "10 م - 9 م",
+    rate: 4.1,
+    image:
+      " https://img.freepik.com/free-photo/doctor-with-his-arms-crossed-white-background_1368-5790.jpg?w=740&t=st=1707587082~exp=1707587682~hmac=2a559f9ccf3e28272baefb518d525e4cc6863e6f718ecf699a582f21e85686b7",
+  },
+  {
+    name: "محمود طعيمة",
+    date: "2023-02-17",
+    value: 500,
+    subtitle: "استشاري تغذية",
+    experts: 7,
+    value_2: 200,
+    next_day: "17 FEB",
+    next_time: "3.30 م - 4.30 م",
+    rate: 4.9,
+    image:
+      "https://img.freepik.com/free-photo/happy-doctor-wearing-glasses-presenting-something_329181-616.jpg?w=740&t=st=1707587190~exp=1707587790~hmac=dc703229e05edec6b021d921c67e24ab76fcae3cf0d7a5ffbd791877354645b2",
+  },
+]);
+
+const sortedData = computed(() => {
+  return [...data.value].sort((a, b) => {
+    if (sortOrder.value === "asc") {
+      return a.value - b.value;
+    } else {
+      return b.value - a.value;
+    }
+  });
+});
+</script>
+
 <template>
   <div class="bg-gray-200">
     <v-container>
-      <div class="sort flex justify-end">
+      <div class="sort flex flex-col-reverse md:flex-row justify-end gap-6 md:gap-40 rounded">
+        <div class="pb-2">
+          <input
+            v-model="searchTerm"
+            placeholder="ابحث بإسم الدكتور"
+            class="text-center  rounded w-full py-1"
+            style="border: 1px solid rgb(153, 148, 148)"
+          />
+          <ul></ul>
+        </div>
         <div
           @click="label = !label"
           class="mb-2 sort rounded-md flex justify-center items-center py-1 px-4 gap-2 cursor-pointer"
@@ -33,7 +120,7 @@
           ><v-col
             cols="12"
             class="mt-10 flex gap-20 py-10 rounded-md flex flex-col md:flex-row-reverse items-center justify-start gap-0 md:gap-2 w-100 bg-white"
-            v-for="item in sortedData"
+            v-for="item in filteredData"
             :key="item.image"
           >
             <div class="text text-center flex flex-row-reverse">
@@ -119,87 +206,3 @@
     </v-container>
   </div>
 </template>
-
-<script setup>
-import { ref, computed } from "vue";
-const label = ref(false);
-
-const sortOrder = ref("asc");
-const data = ref([
-  {
-    name: "أحمد متولي",
-    date: "2023-02-19",
-    value: 150,
-    subtitle: "أخصائي تغذية",
-    experts: 4,
-    value_2: 100,
-    next_day: "19 FEB",
-    next_time: "10.30 م - 11.30 م",
-    rate: 4.5,
-    image:
-      " https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?w=740&t=st=1707507653~exp=1707508253~hmac=8b5f43967ce74599905c90e60741ccbefbb150224a9f7740d8aad016427b4d22",
-  },
-  {
-    name: "محمد بيومي",
-    date: "2023-02-14",
-    value: 250,
-    subtitle: "استشاري تغذية",
-    experts: 9,
-    value_2: 150,
-    next_day: "14 FEB",
-    next_time: "8.30 م - 9.30 م",
-    rate: 4.8,
-    image:
-      "https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg?crop=0.66698xw:1xh;center,top&resize=640:*",
-  },
-  {
-    name: "مصطفى زيدان",
-    date: "2023-02-29",
-    value: 300,
-    subtitle: "أخصائي تغذية",
-    experts: 6,
-    value_2: 150,
-    next_day: "29 FEB",
-    next_time: "10 م - 9 م",
-    rate: 4.1,
-    image:
-      " https://img.freepik.com/free-photo/doctor-with-his-arms-crossed-white-background_1368-5790.jpg?w=740&t=st=1707587082~exp=1707587682~hmac=2a559f9ccf3e28272baefb518d525e4cc6863e6f718ecf699a582f21e85686b7",
-  },
-  {
-    name: "محمود طعيمة",
-    date: "2023-02-17",
-    value: 500,
-    subtitle: "استشاري تغذية",
-    experts: 7,
-    value_2: 200,
-    next_day: "17 FEB",
-    next_time: "3.30 م - 4.30 م",
-    rate: 4.9,
-    image:
-      "https://img.freepik.com/free-photo/happy-doctor-wearing-glasses-presenting-something_329181-616.jpg?w=740&t=st=1707587190~exp=1707587790~hmac=dc703229e05edec6b021d921c67e24ab76fcae3cf0d7a5ffbd791877354645b2",
-  },
-]);
-
-const sortedData = computed(() => {
-  return [...data.value].sort((a, b) => {
-    if (sortOrder.value === "asc") {
-      return a.value - b.value;
-    } else {
-      return b.value - a.value;
-    }
-  });
-});
-
-const sortedDate = computed(() => {
-  return [...data.value].sort((a, b) => {
-    const dateA = new Date(a.date);
-    const dateB = new Date(b.date);
-
-    if (sortOrder.value === "asc") {
-      return dateA - dateB;
-    } else {
-      return dateB - dateA;
-    }
-  });
-});
-</script>
