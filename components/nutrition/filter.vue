@@ -77,7 +77,7 @@
               </div>
               <div class="next-time flex gap-4">
                 <div
-                  class="reservation flex flex-col gap-4 mr-32 mt-14 text-center"
+                  class="reservation flex flex-col gap-4 md:mr-32 mt-14 text-center"
                 >
                   <nuxt-link
                     class="px-2 py-1 bg-green-400 rounded-md md:px-10"
@@ -98,7 +98,7 @@
                     style="border: 1px solid rgb(201, 195, 195)"
                   >
                     <div
-                      class="date flex justify-around items-center px-2 py-1 bg-yellow gap-10"
+                      class="date flex justify-around  items-center px-2 py-1 bg-yellow gap-10"
                     >
                       <h1 style="direction: rtl">{{ item.next_day }}</h1>
                       <h1>:التاريخ</h1>
