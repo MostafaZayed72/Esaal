@@ -38,6 +38,7 @@ const data = ref([
   {
     name: "أحمد متولي",
     date: new Date(2024, 2, 21),
+    path : "/doctors/dr-ahmed-metwally",
     value: 150,
     subtitle: "أخصائي تغذية",
     experts: 4,
@@ -50,6 +51,7 @@ const data = ref([
   },
   {
     name: "معتز عبدالسميع",
+    path : "/doctors/dr-moataz-abdelsamie",
     date: new Date(2024, 2, 22),
     value: 200,
     subtitle: "أخصائي تغذية",
@@ -247,7 +249,7 @@ const sortedData = computed(() => {
                 >
                   <nuxt-link
                     class="px-2 py-1 bg-green-400 rounded-md md:px-10 cursor-pointer"
-                    to=""
+                    :to="item.path"
                     >احجز موعد</nuxt-link
                   >
                   <nuxt-link

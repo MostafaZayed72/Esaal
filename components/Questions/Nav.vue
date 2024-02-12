@@ -7,12 +7,17 @@
     <v-icon
       @click="showMenu"
       size="50px"
-      class="ml-10 cursor-pointer text- z-30"
+      class="ml-10 cursor-pointer text- z-30 hover:text-green-600"
       >mdi-menu</v-icon
     >
     <div class="links sign-in z-30">
-      <NuxtLink class="cursor-pointer" to="">تسجيل الدخول</NuxtLink> /
-      <NuxtLink class="cursor-pointer" to="">انشاء حساب</NuxtLink>
+      <NuxtLink class="cursor-pointer hover:text-green-600" to=""
+        >تسجيل الدخول</NuxtLink
+      >
+      /
+      <NuxtLink class="cursor-pointer hover:text-green-600" to=""
+        >انشاء حساب</NuxtLink
+      >
     </div>
     <img
       class="absolute right-5 md:right-16 cursor-pointer z-30"
@@ -126,13 +131,15 @@
           <i class="fa-solid fa-apple-whole"></i
         ></nuxt-link>
 
-        <nuxt-link to="/psych"
+        <nuxt-link
+          to="/psych"
           class="reservation flex gap-2 p-4 justify-center cursor-pointer hover:text-green-700"
         >
           <h1>الصحة النفسية والاستشارات الزوجية</h1>
           <i class="fa-solid fa-user-doctor"></i>
         </nuxt-link>
-        <nuxt-link to="/medical"
+        <nuxt-link
+          to="/medical"
           class="reservation flex gap-2 p-4 justify-center cursor-pointer hover:text-green-700"
         >
           <h1>استشارات طبية</h1>
