@@ -2,7 +2,7 @@
   <div class="bg-gray-200">
     <v-container>
       <div
-        class="sort flex flex-col-reverse md:flex-row justify-end gap-6 md:gap-40 rounded"
+        class="sort flex flex-col md:flex-row justify-end gap-6 md:gap-40 rounded"
       >
         <div>
           <input
@@ -22,7 +22,7 @@
           <h1>ترتيب حسب</h1>
         </div>
       </div>
-      <div class="labels flex justify-end">
+      <div class="labels flex justify-end w-100">
         <div
           style="border: 1px solid"
           class="labels py-1 px-4 rounded-md flex flex-col justify-center items-end"
@@ -33,8 +33,8 @@
             الأسعار: من الأقل للأعلى
           </label>
           <label class="cursor-pointer" @click="label = false">
-            <input type="radio" v-model="sortOrder" value="desc" /> الأسعار: من
-            الأعلى للأقل</label
+            <input type="radio" v-model="sortOrder" value="desc" />
+            الأسعار: من الأعلى للأقل</label
           >
         </div>
       </div>

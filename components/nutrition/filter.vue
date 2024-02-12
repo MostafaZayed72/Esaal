@@ -1,19 +1,43 @@
 <script setup>
-import { ref, computed } from "vue";
 const searchTerm = ref("");
 
-const filteredData = computed(() => {
-  return sortedData.value.filter((item) =>
-    item.name.includes(searchTerm.value)
-  );
-});
-const label = ref(false);
+const changSort = () => {
+  sortOrder.value = "";
+};
 
-const sortOrder = ref("asc");
+const changNort = () => {
+  nortOrder.value = "";
+};
+
+const allData = computed(() => {
+  const sorted =
+    sortOrder.value === "asc"
+      ? [...data.value].sort((a, b) => a.value - b.value)
+      : [...data.value].sort((a, b) => b.value - a.value);
+  const norted =
+    nortOrder.value === "asc"
+      ? [...data.value].sort((a, b) => a.date - b.date)
+      : [...data.value].sort((a, b) => b.date - a.date);
+
+  return { sorted, norted };
+});
+
+const filteredData = computed(() => {
+  const { sorted, norted } = allData.value;
+  const selectedData = sortOrder.value != "" ? sorted : norted;
+
+  return selectedData.filter((item) => item.name.includes(searchTerm.value));
+});
+
+const label = ref(false);
+const dateLabel = ref(false);
+
+const sortOrder = ref("");
+const nortOrder = ref("");
 const data = ref([
   {
     name: "أحمد متولي",
-    date: "2024-02-19",
+    date: "2",
     value: 150,
     subtitle: "أخصائي تغذية",
     experts: 4,
@@ -25,8 +49,21 @@ const data = ref([
       " https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?w=740&t=st=1707507653~exp=1707508253~hmac=8b5f43967ce74599905c90e60741ccbefbb150224a9f7740d8aad016427b4d22",
   },
   {
+    name: "معتز عبدالسميع",
+    date: "8",
+    value: 200,
+    subtitle: "أخصائي تغذية",
+    experts: 4,
+    value_2: 100,
+    next_day: "19 FEB",
+    next_time: "10.30 م - 11.30 م",
+    rate: 4.5,
+    image:
+      " https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/hamdy-abbas.jpg",
+  },
+  {
     name: "محمد بيومي",
-    date: "2024-02-14",
+    date: "1",
     value: 250,
     subtitle: "استشاري تغذية",
     experts: 9,
@@ -39,7 +76,7 @@ const data = ref([
   },
   {
     name: "مصطفى زيدان",
-    date: "2024-02-29",
+    date: "1",
     value: 300,
     subtitle: "أخصائي تغذية",
     experts: 6,
@@ -52,8 +89,8 @@ const data = ref([
   },
   {
     name: "محمود طعيمة",
-    date: "2024-02-17",
-    value: 500,
+    date: "0",
+    value: 230,
     subtitle: "استشاري تغذية",
     experts: 7,
     value_2: 200,
@@ -64,6 +101,16 @@ const data = ref([
       "https://img.freepik.com/free-photo/happy-doctor-wearing-glasses-presenting-something_329181-616.jpg?w=740&t=st=1707587190~exp=1707587790~hmac=dc703229e05edec6b021d921c67e24ab76fcae3cf0d7a5ffbd791877354645b2",
   },
 ]);
+
+const nortedData = computed(() => {
+  return [...data.value].sort((a, b) => {
+    if (nortOrder.value === "asc") {
+      return a.date - b.date;
+    } else {
+      return b.date - a.date;
+    }
+  });
+});
 
 const sortedData = computed(() => {
   return [...data.value].sort((a, b) => {
@@ -79,39 +126,71 @@ const sortedData = computed(() => {
 <template>
   <div class="bg-gray-200">
     <v-container>
-      <div class="sort flex flex-col md:flex-row justify-end gap-6 md:gap-40 rounded">
+      <div
+        class="sort flex flex-col md:flex-row justify-end gap-6 md:gap-40 rounded"
+      >
         <div class="pb-2">
           <input
             v-model="searchTerm"
             placeholder="ابحث بإسم الدكتور"
-            class="text-center  rounded w-full py-1"
+            class="text-center rounded w-full py-1"
             style="border: 1px solid rgb(153, 148, 148)"
           />
           <ul></ul>
         </div>
-        <div
-          @click="label = !label"
-          class="mb-2 sort rounded-md flex justify-center items-center py-1 px-4 gap-2 cursor-pointer"
-          style="border: 1px solid"
-        >
-          <i class="fa-solid fa-arrow-down-short-wide"></i>
-          <h1>ترتيب حسب</h1>
-        </div>
-      </div>
-      <div class="labels flex justify-end">
-        <div
-          style="border: 1px solid"
-          class="labels py-1 px-4 rounded-md flex flex-col justify-center items-end"
-          v-show="label"
-        >
-          <label class="cursor-pointer" @click="label = false">
-            <input type="radio" v-model="sortOrder" value="asc" />
-            الأسعار: من الأقل للأعلى
-          </label>
-          <label class="cursor-pointer" @click="label = false">
-            <input type="radio" v-model="sortOrder" value="desc" /> الأسعار: من
-            الأعلى للأقل</label
+        <div class="date flex flex-col">
+          <div
+            @click="dateLabel = !dateLabel"
+            class="mb-2 sort rounded-md flex justify-center items-center py-1 px-4 gap-2 cursor-pointer"
+            style="border: 1px solid"
           >
+            <i class="fa-solid fa-arrow-down-short-wide"></i>
+            <h1>ترتيب حسب أقرب موعد</h1>
+          </div>
+          <div class="labels flex justify-end">
+            <div
+              style="border: 1px solid"
+              class="labels py-1 px-4 rounded-md flex flex-col justify-center items-end"
+              v-show="dateLabel"
+              @click="changSort()"
+            >
+              <label class="cursor-pointer">
+                <input type="radio" v-model="nortOrder" value="asc" />
+                حسب الموعد الأقرب
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" v-model="nortOrder" value="desc" /> حسب
+                الموعد الأبعد</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="price flex flex-col">
+          <div
+            @click="label = !label"
+            class="mb-2 sort rounded-md flex justify-center items-center py-1 px-4 gap-2 cursor-pointer"
+            style="border: 1px solid"
+          >
+            <i class="fa-solid fa-arrow-down-short-wide"></i>
+            <h1>ترتيب حسب السعر</h1>
+          </div>
+          <div class="labels flex justify-end">
+            <div
+              style="border: 1px solid"
+              class="labels py-1 px-4 rounded-md flex flex-col justify-center items-end"
+              v-show="label"
+              @click="changNort()"
+            >
+              <label class="cursor-pointer">
+                <input type="radio" v-model="sortOrder" value="asc" />
+                من الأقل للأعلى
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" v-model="sortOrder" value="desc" /> من
+                الأعلى للأقل</label
+              >
+            </div>
+          </div>
         </div>
       </div>
 
