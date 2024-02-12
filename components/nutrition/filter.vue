@@ -37,12 +37,12 @@ const nortOrder = ref("");
 const data = ref([
   {
     name: "أحمد متولي",
-    date: "2",
+    date: new Date(2024, 2, 21),
     value: 150,
     subtitle: "أخصائي تغذية",
     experts: 4,
     value_2: 100,
-    next_day: "19 FEB",
+    next_day: "21 FEB",
     next_time: "10.30 م - 11.30 م",
     rate: 4.5,
     image:
@@ -50,12 +50,12 @@ const data = ref([
   },
   {
     name: "معتز عبدالسميع",
-    date: "8",
+    date: new Date(2024, 2, 22),
     value: 200,
     subtitle: "أخصائي تغذية",
     experts: 4,
     value_2: 100,
-    next_day: "19 FEB",
+    next_day: "22 FEB",
     next_time: "10.30 م - 11.30 م",
     rate: 4.5,
     image:
@@ -63,12 +63,12 @@ const data = ref([
   },
   {
     name: "محمد بيومي",
-    date: "1",
+    date: new Date(2024, 2, 23),
     value: 250,
     subtitle: "استشاري تغذية",
     experts: 9,
     value_2: 150,
-    next_day: "14 FEB",
+    next_day: "23 FEB",
     next_time: "8.30 م - 9.30 م",
     rate: 4.8,
     image:
@@ -76,12 +76,12 @@ const data = ref([
   },
   {
     name: "مصطفى زيدان",
-    date: "1",
+    date: new Date(2024, 2, 24),
     value: 300,
     subtitle: "أخصائي تغذية",
     experts: 6,
     value_2: 150,
-    next_day: "29 FEB",
+    next_day: "24 FEB",
     next_time: "10 م - 9 م",
     rate: 4.1,
     image:
@@ -89,12 +89,12 @@ const data = ref([
   },
   {
     name: "محمود طعيمة",
-    date: "0",
+    date: new Date(2024, 3, 11),
     value: 230,
     subtitle: "استشاري تغذية",
     experts: 7,
     value_2: 200,
-    next_day: "17 FEB",
+    next_day: "11 MARS",
     next_time: "3.30 م - 4.30 م",
     rate: 4.9,
     image:
