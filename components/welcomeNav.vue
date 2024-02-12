@@ -4,7 +4,7 @@
     style="background-color: rgb(63, 188, 161)"
     class="w-100 flex items-center md:gap-10 font-bold text-xl mt-3 pt-10 relative"
   >
-    <v-icon @click="showMenu" size="50px" class="ml-10 cursor-pointer"
+    <v-icon @click="showMenu" size="50px" class="ml-10 cursor-pointer hover:text-white"
       >mdi-menu</v-icon
     >
     <div class="links sign-in z-30">

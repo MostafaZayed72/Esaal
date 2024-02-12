@@ -4,7 +4,7 @@
       class="table sm:w-100 md:w-2/5 bg-slate-300 mx-auto mt-4 shadow-xl rounded-md"
     >
       <h1
-        class="h-10 text-white text-md md:text-2xl flex items-center justify-center mb-10"
+        class="h-10 text-white text-md md:text-2xl flex items-center justify-center mb-10 rounded-t-md"
         style="background-color: rgb(0, 51, 51); direction: rtl"
       >
         اختر المجال ثم وسيلة التواصل
@@ -14,7 +14,7 @@
       >
         <div
           @click="show_nutrition"
-          class="bg-gray-400 icon-table text-center rounded-md py-6 md:px-2 mb-10  cursor-pointer transition duration-300 hover:bg-emerald-900 hover:text-white"
+          class="bg-gray-400 icon-table text-center rounded-md py-6 md:px-2 mb-10 cursor-pointer transition duration-300 hover:bg-emerald-900 hover:text-white"
         >
           <i class="fa-solid fa-apple-whole text-5xl"></i>
           <h1 class="font-bold text-lg">استشارات تغذية</h1>
@@ -23,15 +23,15 @@
           @click="show_psych"
           class="bg-gray-400 icon-table text-center rounded-md py-6 md:px-2 mb-10 cursor-pointer hover:bg-emerald-900 hover:text-white"
         >
-          <i class="fa-solid fa-user-doctor text-5xl "></i>
-          <h1 class="font-bold text-lg ">استشارات نفسية</h1>
+          <i class="fa-solid fa-user-doctor text-5xl"></i>
+          <h1 class="font-bold text-lg">استشارات نفسية</h1>
         </div>
         <div
           @click="show_medical"
           class="bg-gray-400 icon-table text-center rounded-md py-6 md:px-2 mb-10 cursor-pointer hover:bg-emerald-900 hover:text-white"
         >
-          <i class="fa-solid fa-stethoscope text-5xl "></i>
-          <h1 class="font-bold text-lg ">استشارات طبية</h1>
+          <i class="fa-solid fa-stethoscope text-5xl"></i>
+          <h1 class="font-bold text-lg">استشارات طبية</h1>
         </div>
       </div>
 
