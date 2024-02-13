@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
+import eslint from 'vite-plugin-eslint2';
 
 export default defineNuxtConfig({
   //...
@@ -42,6 +43,7 @@ export default defineNuxtConfig({
   ],
 
   vite: {
+    plugins:[eslint()],
     vue: {
       template: {
         transformAssetUrls,
