@@ -90,8 +90,9 @@ const data = ref([
       ' https://img.freepik.com/free-photo/doctor-with-his-arms-crossed-white-background_1368-5790.jpg?w=740&t=st=1707587082~exp=1707587682~hmac=2a559f9ccf3e28272baefb518d525e4cc6863e6f718ecf699a582f21e85686b7',
   },
   {
-    name: 'محمود طعيمة',
+    name: 'ضياء هلال',
     date: new Date(2024, 3, 11),
+    path:'/doctors/Dr-Diaa-Helal',
     value: 230,
     subtitle: 'استشاري تغذية',
     experts: 7,
@@ -100,7 +101,7 @@ const data = ref([
     next_time: '3.30 م - 4.30 م',
     rate: 4.9,
     image:
-      'https://img.freepik.com/free-photo/happy-doctor-wearing-glasses-presenting-something_329181-616.jpg?w=740&t=st=1707587190~exp=1707587790~hmac=dc703229e05edec6b021d921c67e24ab76fcae3cf0d7a5ffbd791877354645b2',
+      'https://scontent.fcai19-8.fna.fbcdn.net/v/t1.15752-9/417601018_1443853876487667_7120476536903815791_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeF7NrNX0twqgHFrPpMQ-B08R3wx1dDcXVNHfDHV0NxdU_1po9MbclbhTO6tAIu8eyEoHzrmpUZasAAKH0oEPm3s&_nc_ohc=iw5J7GiszvsAX-eoDq_&_nc_ht=scontent.fcai19-8.fna&oh=03_AdRrO4nj0dhn33g6nGK53UQ_Gj-HtRJkZTOP6OhHJoLDrA&oe=65F4A946',
   },
 ]);
 
@@ -214,7 +215,7 @@ const sortedData = computed(() => {
               <div class="text flex flex-col items-center justify-center mr-4">
                 <nuxt-link
                   to=""
-                  class="cursor-pointer font-bold text-xl"
+                  class="w-32 cursor-pointer font-bold text-xl"
                   style="text-decoration: underline"
                 >
                   د/ {{ item.name }}
