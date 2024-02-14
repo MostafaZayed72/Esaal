@@ -1,10 +1,37 @@
+<script setup>
+const desserts = [
+  {
+    name: 'Frozen Yogurt',
+    calories: 159,
+  },
+  {
+    name: 'Ice cream sandwich',
+    calories: 237,
+  },
+  {
+    name: 'Eclair',
+    calories: 262,
+  },
+  {
+    name: 'Cupcake',
+    calories: 305,
+  },
+];
+</script>
+
 <template>
   <v-table fixed-header height="300px">
     <thead>
       <tr>
-        <th class="text-left">Name</th>
-        <th class="text-left">Calories</th>
-        <th class="text-left">Calories</th>
+        <th class="text-left">
+          Name
+        </th>
+        <th class="text-left">
+          Calories
+        </th>
+        <th class="text-left">
+          Calories
+        </th>
       </tr>
     </thead>
     <tbody>
@@ -16,24 +43,3 @@
     </tbody>
   </v-table>
 </template>
-
-<script setup>
-const desserts = [
-  {
-    name: "Frozen Yogurt",
-    calories: 159,
-  },
-  {
-    name: "Ice cream sandwich",
-    calories: 237,
-  },
-  {
-    name: "Eclair",
-    calories: 262,
-  },
-  {
-    name: "Cupcake",
-    calories: 305,
-  },
-];
-</script>

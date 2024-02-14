@@ -1,26 +1,27 @@
 <script setup>
-import { ref, computed } from "vue";
+import { computed, ref } from 'vue';
+
 const label = ref(false);
 const dateLabel = ref(false);
 
-const sortOrder = ref("");
-const nortOrder = ref("");
+const sortOrder = ref('');
+const nortOrder = ref('');
 
-const changSort = () => {
-  sortOrder.value = "";
-};
+function changSort() {
+  sortOrder.value = '';
+}
 
-const changNort = () => {
-  nortOrder.value = "";
-};
+function changNort() {
+  nortOrder.value = '';
+}
 
 const allData = computed(() => {
-  const sorted =
-    sortOrder.value === "asc"
+  const sorted
+    = sortOrder.value === 'asc'
       ? [...data.value].sort((a, b) => a.value - b.value)
       : [...data.value].sort((a, b) => b.value - a.value);
-  const norted =
-    nortOrder.value === "asc"
+  const norted
+    = nortOrder.value === 'asc'
       ? [...data.value].sort((a, b) => a.date - b.date)
       : [...data.value].sort((a, b) => b.date - a.date);
 
@@ -29,102 +30,101 @@ const allData = computed(() => {
 
 const filteredData = computed(() => {
   const { sorted, norted } = allData.value;
-  const selectedData = sortOrder.value != "" ? sorted : norted;
+  const selectedData = sortOrder.value != '' ? sorted : norted;
 
-  return selectedData.filter((item) => item.name.includes(searchTerm.value));
+  return selectedData.filter(item => item.name.includes(searchTerm.value));
 });
 const data = ref([
   {
-    name: "سامر المزين",
+    name: 'سامر المزين',
     date: new Date(2024, 2, 18),
     value: 150,
-    subtitle: "أخصائي نفسي",
+    subtitle: 'أخصائي نفسي',
     experts: 4,
     value_2: 100,
-    next_day: "18 FEB",
-    next_time: "10.30 م - 11.30 م",
+    next_day: '18 FEB',
+    next_time: '10.30 م - 11.30 م',
     rate: 4.5,
     image:
-      "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/samer31.jpg",
+      'https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/samer31.jpg',
   },
   {
-    name: "إبراهيم عبدالغفار",
+    name: 'إبراهيم عبدالغفار',
     date: new Date(2024, 2, 24),
     value: 250,
-    subtitle: "استشاري نفسي",
+    subtitle: 'استشاري نفسي',
     experts: 9,
     value_2: 150,
-    next_day: "24 FEB",
-    next_time: "8.30 م - 9.30 م",
+    next_day: '24 FEB',
+    next_time: '8.30 م - 9.30 م',
     rate: 4.8,
     image:
-      "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/ibrahhimabdelghafar.jpg",
+      'https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/ibrahhimabdelghafar.jpg',
   },
   {
-    name: "مصطفى عبدالحميد",
+    name: 'مصطفى عبدالحميد',
     date: new Date(2024, 2, 29),
     value: 300,
-    subtitle: "أخصائي نفسي إكلينيكي",
+    subtitle: 'أخصائي نفسي إكلينيكي',
     experts: 6,
     value_2: 150,
-    next_day: "29 FEB",
-    next_time: "10 م - 9 م",
+    next_day: '29 FEB',
+    next_time: '10 م - 9 م',
     rate: 4.1,
     image:
-      "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/mostafaabdelhamed.jpg",
+      'https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/mostafaabdelhamed.jpg',
   },
   {
-    name: "إبراهيم محروس",
+    name: 'إبراهيم محروس',
     date: new Date(2024, 2, 17),
     value: 500,
-    subtitle: "أخصائي نفسي",
+    subtitle: 'أخصائي نفسي',
     experts: 7,
     value_2: 200,
-    next_day: "17 FEB",
-    next_time: "3.30 م - 4.30 م",
+    next_day: '17 FEB',
+    next_time: '3.30 م - 4.30 م',
     rate: 4.9,
     image:
-      "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/ibrahim_mahros-removebg-preview.jpg",
+      'https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/ibrahim_mahros-removebg-preview.jpg',
   },
   {
-    name: "أحمد فتحي",
+    name: 'أحمد فتحي',
     date: new Date(2024, 2, 22),
     value: 550,
-    subtitle: "أخصائي نفسي",
+    subtitle: 'أخصائي نفسي',
     experts: 7,
     value_2: 210,
-    next_day: "22 FEB",
-    next_time: "3.30 م - 4.30 م",
+    next_day: '22 FEB',
+    next_time: '3.30 م - 4.30 م',
     rate: 4.9,
     image:
-      "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/Dr.Ahmed-fathy-ismail10-1-2024.jpg",
+      'https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/Dr.Ahmed-fathy-ismail10-1-2024.jpg',
   },
   {
-    name: "محمود نعيم",
+    name: 'محمود نعيم',
     date: new Date(2024, 2, 27),
     value: 300,
-    subtitle: "أخصائي نفسي",
+    subtitle: 'أخصائي نفسي',
     experts: 7,
     value_2: 100,
-    next_day: "27 FEB",
-    next_time: "3.30 م - 4.30 م",
+    next_day: '27 FEB',
+    next_time: '3.30 م - 4.30 م',
     rate: 4.2,
     image:
-      "https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/naim26112023.jpg",
+      'https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/naim26112023.jpg',
   },
 ]);
 
 const sortedData = computed(() => {
   return [...data.value].sort((a, b) => {
-    if (sortOrder.value === "asc") {
+    if (sortOrder.value === 'asc')
       return a.value - b.value;
-    } else {
+    else
       return b.value - a.value;
-    }
   });
 });
 
-const searchTerm = ref("");
+const searchTerm = ref('');
 </script>
 
 <template>
@@ -139,72 +139,70 @@ const searchTerm = ref("");
             placeholder="ابحث بإسم الدكتور"
             class="text-center rounded w-full py-1"
             style="border: 1px solid rgb(153, 148, 148)"
-          />
-          <ul></ul>
+          >
+          <ul />
         </div>
         <div class="date flex flex-col">
           <div
-            @click="dateLabel = !dateLabel"
             class="mb-2 sort rounded-md flex justify-center items-center py-1 px-4 gap-2 cursor-pointer"
             style="border: 1px solid"
+            @click="dateLabel = !dateLabel"
           >
-            <i class="fa-solid fa-arrow-down-short-wide"></i>
+            <i class="fa-solid fa-arrow-down-short-wide" />
             <h1>ترتيب حسب أقرب موعد</h1>
           </div>
           <div class="labels flex justify-end">
             <div
+              v-show="dateLabel"
               style="border: 1px solid"
               class="labels py-1 px-4 rounded-md flex flex-col justify-center items-end"
-              v-show="dateLabel"
               @click="changSort()"
             >
               <label class="cursor-pointer">
-                <input type="radio" v-model="nortOrder" value="asc" />
+                <input v-model="nortOrder" type="radio" value="asc">
                 حسب الموعد الأقرب
               </label>
               <label class="cursor-pointer">
-                <input type="radio" v-model="nortOrder" value="desc" /> حسب
-                الموعد الأبعد</label
-              >
+                <input v-model="nortOrder" type="radio" value="desc"> حسب
+                الموعد الأبعد</label>
             </div>
           </div>
         </div>
         <div class="price flex flex-col">
           <div
-            @click="label = !label"
             class="mb-2 sort rounded-md flex justify-center items-center py-1 px-4 gap-2 cursor-pointer"
             style="border: 1px solid"
+            @click="label = !label"
           >
-            <i class="fa-solid fa-arrow-down-short-wide"></i>
+            <i class="fa-solid fa-arrow-down-short-wide" />
             <h1>ترتيب حسب السعر</h1>
           </div>
           <div class="labels flex justify-end">
             <div
+              v-show="label"
               style="border: 1px solid"
               class="labels py-1 px-4 rounded-md flex flex-col justify-center items-end"
-              v-show="label"
               @click="changNort()"
             >
               <label class="cursor-pointer">
-                <input type="radio" v-model="sortOrder" value="asc" />
+                <input v-model="sortOrder" type="radio" value="asc">
                 من الأقل للأعلى
               </label>
               <label class="cursor-pointer">
-                <input type="radio" v-model="sortOrder" value="desc" /> من
-                الأعلى للأقل</label
-              >
+                <input v-model="sortOrder" type="radio" value="desc"> من
+                الأعلى للأقل</label>
             </div>
           </div>
         </div>
       </div>
 
       <div class="card mb-10 w-100">
-        <v-row
-          ><v-col
-            cols="12"
-            class="mt-10 flex gap-20 py-10 rounded-md flex flex-col md:flex-row-reverse items-center justify-start gap-0 md:gap-2 w-100 bg-white"
+        <v-row>
+          <v-col
             v-for="item in filteredData"
             :key="item.image"
+            cols="12"
+            class="mt-10 flex gap-20 py-10 rounded-md flex flex-col md:flex-row-reverse items-center justify-start gap-0 md:gap-2 w-100 bg-white"
           >
             <div class="text text-center flex flex-row-reverse">
               <img
@@ -216,18 +214,20 @@ const searchTerm = ref("");
                   width: 150px;
                   height: 150px;
                 "
-              />
+              >
               <div class="text flex flex-col items-center justify-center mr-4">
                 <nuxt-link
                   to=""
                   class="cursor-pointer font-bold text-xl"
                   style="text-decoration: underline"
                 >
-                  د/ {{ item.name }}</nuxt-link
-                >
-                <h1 class="text-gray-700 text-sm mt-1">{{ item.subtitle }}</h1>
+                  د/ {{ item.name }}
+                </nuxt-link>
+                <h1 class="text-gray-700 text-sm mt-1">
+                  {{ item.subtitle }}
+                </h1>
                 <div class="star text-center">
-                  {{ item.rate }}<i class="fa-solid fa-star ml-1 mt-2"></i>
+                  {{ item.rate }}<i class="fa-solid fa-star ml-1 mt-2" />
                   <div class="experts flex justify-center gap-1">
                     <h1>سنوات خبرة</h1>
                     <h1>{{ item.experts }}</h1>
@@ -242,8 +242,12 @@ const searchTerm = ref("");
                 <h1 class="mb-2 mt-4" style="text-decoration: underline">
                   الأسعار
                 </h1>
-                <h1 style="direction: rtl">{{ item.value }} جنيه/كشف</h1>
-                <h1 style="direction: rtl">{{ item.value_2 }} جنيه/استشارة</h1>
+                <h1 style="direction: rtl">
+                  {{ item.value }} جنيه/كشف
+                </h1>
+                <h1 style="direction: rtl">
+                  {{ item.value_2 }} جنيه/استشارة
+                </h1>
               </div>
               <div class="next-time flex gap-4">
                 <div
@@ -252,17 +256,21 @@ const searchTerm = ref("");
                   <nuxt-link
                     class="px-2 py-1 bg-green-400 rounded-md md:px-10 cursor-pointer"
                     to=""
-                    >احجز موعد</nuxt-link
                   >
+                    احجز موعد
+                  </nuxt-link>
                   <nuxt-link
                     class="r px-2 py-1 rounded-md md:px-10 cursor-pointer"
                     to=""
                     style="border: 1px solid"
-                    >مواعيد أخرى</nuxt-link
                   >
+                    مواعيد أخرى
+                  </nuxt-link>
                 </div>
                 <div class="text-center">
-                  <h1 class="mb-2 mt-6 md:mt-1">أقرب موعد</h1>
+                  <h1 class="mb-2 mt-6 md:mt-1">
+                    أقرب موعد
+                  </h1>
                   <div
                     class="colored-text w-100 rounded-md"
                     style="border: 1px solid rgb(201, 195, 195)"
@@ -270,7 +278,9 @@ const searchTerm = ref("");
                     <div
                       class="date flex justify-around items-center px-2 py-1 bg-yellow gap-10"
                     >
-                      <h1 style="direction: rtl">{{ item.next_day }}</h1>
+                      <h1 style="direction: rtl">
+                        {{ item.next_day }}
+                      </h1>
                       <h1>:التاريخ</h1>
                     </div>
                     <h1 class="mt-4" style="direction: rtl">
@@ -281,10 +291,11 @@ const searchTerm = ref("");
                 <div
                   class="line h-40 md:bg-gray-300 bg-white-100 md:mr-32"
                   style="width: 2px"
-                ></div>
+                />
               </div>
-            </div> </v-col
-        ></v-row>
+            </div>
+          </v-col>
+        </v-row>
       </div>
     </v-container>
   </div>

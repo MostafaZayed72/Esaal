@@ -1,36 +1,36 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
+import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
 import eslint from 'vite-plugin-eslint2';
 
 export default defineNuxtConfig({
-  //...
+  // ...
 
-  buildModules: ["@nuxtjs/vuetify"],
+  buildModules: ['@nuxtjs/vuetify'],
   vuetify: {
     // Vuetify configuration
   },
   head: {
     link: [
       {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com",
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com',
       },
     ],
   },
-  css: ["@fortawesome/fontawesome-free/css/all.css", "/assets/styles.css"],
+  css: ['@fortawesome/fontawesome-free/css/all.css', '/assets/styles.css'],
   build: {
-    transpile: ["vuetify"],
+    transpile: ['vuetify'],
   },
-  modules: [
-    "@nuxtjs/tailwindcss",
+  modules: ['nuxt-icon',
+    '@nuxtjs/tailwindcss',
     (_options, nuxt) => {
-      nuxt.hooks.hook("vite:extendConfig", (config) => {
+      nuxt.hooks.hook('vite:extendConfig', (config) => {
         config.plugins.push(vuetify({ autoImport: true }));
       });
     },
     [
-      "@nuxtjs/google-fonts",
+      '@nuxtjs/google-fonts',
       {
         families: {
           Marhey: true,
@@ -39,11 +39,11 @@ export default defineNuxtConfig({
         },
       },
     ],
-    //...
+    // ...
   ],
 
   vite: {
-    plugins:[eslint()],
+    plugins: [eslint()],
     vue: {
       template: {
         transformAssetUrls,

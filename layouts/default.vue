@@ -1,1 +1,3 @@
-<template><navBar /><NuxtPage /><MyFooter /></template>
+<template>
+  <navBar /><NuxtPage /><MyFooter />
+</template>
