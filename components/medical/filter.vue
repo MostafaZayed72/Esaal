@@ -257,7 +257,7 @@ const searchTerm = ref('');
               </div>
               <div class="next-time flex gap-4">
                 <div
-                  class="reservation w-32 flex flex-col gap-4 md:mr-32 mt-14 text-center"
+                  class="reservation w-32 flex flex-col gap-4 md:mr-32 mt-14 text-center justify-center"
                 >
                   <nuxt-link
                     class="px-2 py-1 bg-green-400 rounded-md md:px-10 cursor-pointer"
@@ -265,15 +265,9 @@ const searchTerm = ref('');
                   >
                     احجز موعد
                   </nuxt-link>
-                  <nuxt-link
-                    class="r px-2 py-1 rounded-md md:px-10 cursor-pointer"
-                    to=""
-                    style="border: 1px solid"
-                  >
-                    مواعيد أخرى
-                  </nuxt-link>
+                  
                 </div>
-                <div class="text-center">
+                <div class="text-center flex flex-col justify-center">
                   <h1 class="mb-2 mt-6 md:mt-1">
                     أقرب موعد
                   </h1>
