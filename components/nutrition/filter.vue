@@ -51,7 +51,7 @@ const data = ref([
   },
   {
     name: 'معتز عبدالسميع',
-    path: '/doctors/dr-moataz-abdelsamie',
+    path: '/doctors/Dr-Moataz-Abdelsamie',
     date: new Date(2024, 2, 22),
     value: 200,
     subtitle: 'أخصائي تغذية',
@@ -65,6 +65,7 @@ const data = ref([
   },
   {
     name: 'محمد بيومي',
+    path:'/doctors/Dr-Mohamed-Bayoumi',
     date: new Date(2024, 2, 23),
     value: 250,
     subtitle: 'استشاري تغذية',
@@ -78,6 +79,7 @@ const data = ref([
   },
   {
     name: 'مصطفى زيدان',
+    path:'/doctors/Dr-Mostafa-Zedan',
     date: new Date(2024, 2, 24),
     value: 300,
     subtitle: 'أخصائي تغذية',

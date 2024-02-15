@@ -37,6 +37,7 @@ const filteredData = computed(() => {
 const data = ref([
   {
     name: 'سامر المزين',
+    path:'/doctors/Dr-Samer-Elmezayen',
     date: new Date(2024, 2, 18),
     value: 150,
     subtitle: 'أخصائي نفسي',
@@ -50,6 +51,7 @@ const data = ref([
   },
   {
     name: 'إبراهيم عبدالغفار',
+    path:'doctors/Ebrahim-Abdelghafar',
     date: new Date(2024, 2, 24),
     value: 250,
     subtitle: 'استشاري نفسي',
@@ -63,12 +65,13 @@ const data = ref([
   },
   {
     name: 'مصطفى عبدالحميد',
-    date: new Date(2024, 2, 29),
+    path:'doctors/Dr-Mostafa-Abdelhamid',
+    date: new Date(2024, 2, 28),
     value: 300,
     subtitle: 'أخصائي نفسي إكلينيكي',
     experts: 6,
     value_2: 150,
-    next_day: '29 FEB',
+    next_day: '28 FEB',
     next_time: '10 م - 9 م',
     rate: 4.1,
     image:
@@ -76,6 +79,7 @@ const data = ref([
   },
   {
     name: 'إبراهيم محروس',
+    path:'doctors/Dr-Ebrahim-Mahrous',
     date: new Date(2024, 2, 17),
     value: 500,
     subtitle: 'أخصائي نفسي',
@@ -89,6 +93,7 @@ const data = ref([
   },
   {
     name: 'أحمد فتحي',
+    path:'doctors/Dr-Ahmed-Fathy',
     date: new Date(2024, 2, 22),
     value: 550,
     subtitle: 'أخصائي نفسي',
@@ -102,6 +107,7 @@ const data = ref([
   },
   {
     name: 'محمود نعيم',
+    path:'doctors/Dr-Mahmoud-Naiem',
     date: new Date(2024, 2, 27),
     value: 300,
     subtitle: 'أخصائي نفسي',
@@ -218,12 +224,12 @@ const searchTerm = ref('');
               <div class="text flex flex-col items-center justify-center mr-4">
                 <nuxt-link
                   to=""
-                  class="cursor-pointer font-bold text-xl"
+                  class="cursor-pointer w-32 font-bold text-xl"
                   style="text-decoration: underline"
                 >
                   د/ {{ item.name }}
                 </nuxt-link>
-                <h1 class="text-gray-700 text-sm mt-1">
+                <h1 class="text-gray-700 w-32 text-sm mt-1">
                   {{ item.subtitle }}
                 </h1>
                 <div class="star text-center">
@@ -255,7 +261,7 @@ const searchTerm = ref('');
                 >
                   <nuxt-link
                     class="px-2 py-1 bg-green-400 rounded-md md:px-10 cursor-pointer"
-                    to=""
+                    :to="item.path"
                   >
                     احجز موعد
                   </nuxt-link>
