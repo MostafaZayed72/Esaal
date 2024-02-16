@@ -1,6 +1,6 @@
 <template>
   <v-container class="take_up bg-gray-300 md:rounded-xl shadow-md">
-    <v-row style="direction: rtl;">
+    <v-row style="direction: rtl6; ">
       <v-col cols="12">
         <h1 class="text-start text-5xl font-bold mb-10 p-3">
           عن اسأل
@@ -46,31 +46,31 @@
           تجدونا في :
         </h1>
       </v-col>
-      <v-col cols="3" class="text-start">
+      <v-col cols="6" md="3"  class="text-end">
         <span>العراق</span> <Icon class="text-2xl" name="twemoji:flag-iraq" />
       </v-col>
-      <v-col cols="3" class="text-start">
+      <v-col cols="6" md="3"  class="text-end">
         <span>قطر</span> <Icon class="text-2xl" name="twemoji:flag-qatar" />
       </v-col>
-      <v-col cols="3" class="text-start">
+      <v-col cols="6" md="3" class="text-end">
         <span>فلسطين</span> <Icon class="text-2xl" name="twemoji:flag-palestinian-territories" />
       </v-col>
-      <v-col cols="3" class="text-start">
+      <v-col cols="6" md="3" class="text-end">
         <span>مصر</span> <Icon class="text-2xl" name="twemoji:flag-for-flag-egypt" />
       </v-col>
-      <v-col cols="3" class="text-start">
+      <v-col cols="6" md="3" class="text-end">
         <span>البحرين</span> <Icon class="text-2xl" name="twemoji:flag-bahrain" />
       </v-col>
-      <v-col cols="3" class="text-start">
+      <v-col cols="6" md="3" class="text-end">
         <span>الكويت</span> <Icon class="text-2xl" name="twemoji:flag-kuwait" />
       </v-col>
-      <v-col cols="3" class="text-start">
+      <v-col cols="6" md="3" class="text-end">
         <span>السعودية</span> <Icon class="text-2xl" name="twemoji:flag-saudi-arabia" />
       </v-col>
-      <v-col cols="3" class="text-start">
+      <v-col cols="6" md="3" class="text-end">
         <span>تونس</span> <Icon class="text-2xl" name="twemoji:flag-for-flag-tunisia" />
       </v-col>
-      <v-col cols="12" class="text-start">
+      <v-col cols="12" class="text-end">
         <span>الأردن</span> <Icon class="text-2xl" name="twemoji:flag-jordan" />
       </v-col>
     </v-row>
