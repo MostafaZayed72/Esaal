@@ -2,6 +2,13 @@
 const selectedItem = ref(null);
 const items = ['Arabic / اللغة العربية', 'English / اللغة الإنجليزية'];
 const currentYear = new Date().getFullYear();
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+}
 </script>
 
 <template>
@@ -51,7 +58,7 @@ const currentYear = new Date().getFullYear();
           >
             من نحن
           </nuxt-link><nuxt-link
-         
+
             to="/Questions"
             class="hover:text-yellow-500 cursor-pointer"
           >
@@ -62,8 +69,8 @@ const currentYear = new Date().getFullYear();
           >
             البحث عن خبير
           </nuxt-link><nuxt-link
-            to="/"
             class="hover:text-yellow-500 cursor-pointer"
+            @click="scrollToTop"
           >
             الصفحة الرئيسية
           </nuxt-link>
