@@ -11,7 +11,7 @@
           src="https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/personalized.svg"
           alt=""
         >
-        <h1 class="text-2xl font-bold mt-5 mb-16">
+        <h1 class="text-2xl font-bold mt-5 mb-16 w-60 text-center">
           إجابات شخصية
         </h1>
       </div>
@@ -20,7 +20,7 @@
           src="https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/confidentiality.svg"
           alt=""
         >
-        <h1 class="text-2xl font-bold mt-5 mb-16">
+        <h1 class="text-2xl font-bold mt-5 mb-16 w-60 text-center">
           السرية التامة
         </h1>
       </div>
@@ -29,7 +29,7 @@
           src="https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/Bilingual.svg"
           alt=""
         >
-        <h1 class="text-2xl font-bold mt-5 mb-16">
+        <h1 class="text-2xl font-bold mt-5 mb-16 w-60 text-center">
           تجربة ثنائية اللغة
         </h1>
       </div>
@@ -40,7 +40,7 @@
           src="https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/Follow.svg"
           alt=""
         >
-        <h1 class="text-2xl font-bold mt-5 mb-16">
+        <h1 class="text-2xl font-bold mt-5 mb-16  w-60 text-center">
           المتابعات
         </h1>
       </div>
@@ -49,7 +49,7 @@
           src="https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/Follow.svg"
           alt=""
         >
-        <h1 class="text-2xl font-bold mt-5 mb-16">
+        <h1 class="text-2xl font-bold mt-5 mb-16  w-60 text-center">
           24/7 دعم
         </h1>
       </div>
@@ -58,7 +58,7 @@
           src="https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/assets/images/multiple.svg"
           alt=""
         >
-        <h1 class="text-2xl font-bold mt-5 mb-16">
+        <h1 class="text-2xl font-bold mt-5 mb-16  w-60 text-center">
           خيارات دفع متعددة
         </h1>
       </div>

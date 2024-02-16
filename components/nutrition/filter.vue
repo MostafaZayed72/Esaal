@@ -216,7 +216,7 @@ const sortedData = computed(() => {
               >
               <div class="text flex flex-col items-center justify-center mr-4">
                 <nuxt-link
-                  to=""
+                :to="item.path"
                   class="w-32 cursor-pointer font-bold text-xl"
                   style="text-decoration: underline"
                 >

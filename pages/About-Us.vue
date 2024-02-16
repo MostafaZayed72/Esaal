@@ -10,7 +10,7 @@
         alt=""
         style="transform: translateY(-90px)"
       >
-      <QuestionsContent />
+      <AboutContent />
     </div>
  
   </div>

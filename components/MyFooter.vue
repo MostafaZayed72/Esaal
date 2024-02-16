@@ -46,20 +46,18 @@ const currentYear = new Date().getFullYear();
           >
             المدونة
           </nuxt-link><nuxt-link
-            target="_blank"
-            to=""
+            to="/About-Us"
             class="hover:text-yellow-500 cursor-pointer"
           >
             من نحن
           </nuxt-link><nuxt-link
-            target="_blank"
-            to=""
+         
+            to="/Questions"
             class="hover:text-yellow-500 cursor-pointer"
           >
             أسئلة متكررة
           </nuxt-link><nuxt-link
-            target="_blank"
-            to=""
+            to="/psych"
             class="hover:text-yellow-500 cursor-pointer"
           >
             البحث عن خبير
@@ -146,14 +144,14 @@ const currentYear = new Date().getFullYear();
         />
         <v-col
           cols="12"
-          class="text-white mt-6 flex flex-col md:flex-row justify-between items-center text-center"
+          class="text-white mt-6 flex flex-col md:flex-row justify-center items-center text-center"
         >
           <div class="rights">
             <h1>
               <span>{{ currentYear }}</span> جميع الحقوق محفظوظة لإسأل
             </h1>
           </div>
-          <div
+          <!-- <div
             class="flex flex-col items-center mt-4 gap-4 md:flex-row md:mt-0 md:gap-10 text-center"
           >
             <nuxt-link class="hover:text-yellow-500 cursor-pointer" target="_blank" to="" style="text-decoration: underline">
@@ -165,7 +163,7 @@ const currentYear = new Date().getFullYear();
             <nuxt-link class="hover:text-yellow-500 cursor-pointer" target="_blank" to="" style="text-decoration: underline">
               سياسة الخصوصية
             </nuxt-link>
-          </div>
+          </div> -->
         </v-col>
       </v-row>
     </v-container>

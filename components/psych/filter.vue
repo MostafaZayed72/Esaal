@@ -223,7 +223,7 @@ const searchTerm = ref('');
               >
               <div class="text flex flex-col items-center justify-center mr-4">
                 <nuxt-link
-                  to=""
+                  :to="item.path"
                   class="cursor-pointer w-32 font-bold text-xl"
                   style="text-decoration: underline"
                 >
