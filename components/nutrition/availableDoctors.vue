@@ -40,7 +40,7 @@ const doctors = [
                 {{ doctor.subtitle }}
               </h1>
               <nuxt-link
-                to=""
+                to="doctors/dr-ahmed-metwally"
                 class="cursor-pointer text-white px-10 py-1 text-center align-center rounded-md"
                 style="
                   transform: translateY(70%);

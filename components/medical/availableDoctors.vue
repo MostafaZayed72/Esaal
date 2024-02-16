@@ -2,18 +2,21 @@
 const doctors = [
   {
     name: 'د/أحمد عبدالحميد',
+    path:'doctors/Dr-Ahmed-Abdelhamid',
     subtitle: 'استشاري التأهيل الطبيعي والإصابات',
     image:
       'https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/ahmeddd.PNG',
   },
   {
     name: 'د/أحمد صالح',
+    path:'doctors/Dr-Ahmed-Saleh',
     subtitle: 'طبيب أطفال',
     image:
       'https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/ex_ahmedsalah.jpg',
   },
   {
     name: 'د/محمد بركات',
+    path:'doctors/Dr-Mohamed-Barakat',
     subtitle: 'أخصائي جراحة العظام',
     image:
       'https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/Mohamedbarakat.jpg',
@@ -53,7 +56,7 @@ const doctors = [
                 {{ doctor.subtitle }}
               </h1>
               <nuxt-link
-                to=""
+                :to="doctor.path"
                 class="cursor-pointer text-white px-10 py-1 text-center align-center rounded-md"
                 style="
                   transform: translateY(70%);

@@ -2,18 +2,21 @@
 const doctors = [
   {
     name: 'د/سامر المزين',
+    path:'doctors/Dr-Samer-Elmezayen',
     subtitle: 'أخصائي نفسي',
     image:
       'https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/samer31.jpg',
   },
   {
     name: 'د/إبراهيم عبدالغفار',
+    path:'doctors/Ebrahim-Abdelghafar',
     subtitle: 'أخصائي نفسي إكلينيكي',
     image:
       'https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/ibrahhimabdelghafar.jpg',
   },
   {
     name: 'د/مصطفى عبدالحميد',
+    path:'doctors/Dr-Mostafa-Abdelhamid',
     subtitle: 'أخصائي نفسي إكلينيكي',
     image:
       'https://cdn.statically.io/gh/AhmedMSoliman160/20230301v01/main/pic/images/experts/mostafaabdelhamed.jpg',
@@ -54,7 +57,7 @@ const doctors = [
                 {{ doctor.subtitle }}
               </h1>
               <nuxt-link
-                to=""
+                :to="doctor.path"
                 class="cursor-pointer text-white px-10 py-1 text-center align-center rounded-md"
                 style="
                   transform: translateY(70%);
